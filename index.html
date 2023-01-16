@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e108fbf003.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+    <script type="text/javascript" src="./floating-whatsapp-master/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/floating-whatsapp-master/floating-wpp.min.js"></script>
+    <link rel="stylesheet" href="/floating-whatsapp-master/floating-wpp.min.css">
+    <title>Fogop</title>
+
+
+</head>
+
+<body>
+
+    <!-- INICIO HEADER -->
+    <header>
+
+        <!-- MARCA MANAGE/ISOTIPO+LOGOTIPO -->
+        <div class="marca">
+            <img class="logotype" src="./img/logotypeFogop.png" alt="FOGOP">
+        </div>
+
+        <!-- MENU DESKTOP -->
+        <nav class="mn-dsktop">
+            <ul class="desktop-menu">
+                <li><a href="#project">Proyecto de Luminarias</a></li>
+                <li><a href="#obras">Sobre Obras</a></li>
+                <li><a href="#pagos">Sobre Pagos</a></li>
+                <!-- <li><a href="#">Acerca de Fogop</a></li> -->
+                <li><a href="#donde">Donde Estamos</a></li>
+            </ul>
+        </nav>
+        <!-- <button class="btton">Consultar Estado</button> -->
+
+        <!-- MENU MOBILE -->
+        <div class="hambur">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+    </header>
+    <!-- FIN HEADER -->
+
+
+    <!-- INICIO MAIN -->
+    <main>
+
+
+
+        <div class="slide-contenedor">
+            <div class="miSlider fade">
+                <img src="/img/f2.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="/img/f1.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="/img/f3.jpg" alt="">
+            </div>
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+            </div>
+        </div>
+
+
+
+
+        <section>
+
+            <!-- <a class="wppContact" href="https://api.whatsapp.com/send?phone=5493794265994" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a> -->
+        </section>
+        <!-- Bring everyone... + grafico -->
+        <section class="column1" id="project">
+            <div class="graf">
+                <img src="/img/f3.jpg" alt="graficos">
+            </div>
+            <div class="box">
+                <h3 class="title">Proyecto de Luminarias</h3><br>
+                <h4>¿Qué es la contribución por mejoras?</h4>
+                <p class="parrafoo">Las contribuciones por mejoras es un sistema que permite la realizacion, de forma
+                    financiada, de obras necesarias para el barrio, que son solicitadas por los vecinos.</p><br>
+                <p class="parrafoo">La presente propuesta tiene como objetivo la actualizacion de tecnologia en
+                    luminarias con motivo de
+                    brindar al vecino una mejor calidad de vida, y fomentar el crecimiento y desarrollo de la ciudad en
+                    terminos urbanisticos.
+                </p>
+            </div>
+        </section>
+
+        <!-- "whats different..." -->
+        <section class="box beta">
+            <div>
+                <article class="box-what">
+                    <h3 id="obras" class="sub-title">Sobre Obras</h3>
+                    <p>La presente propuesta tiene como objetivo la actualizacion de tecnologia en luminarias con motivo
+                        de brindar al vecino una mejor calidad de vida, y fomentar el crecimiento y desarrollo de la
+                        ciudad en terminos urbanisticos.</p>
+                    <br>
+
+                    <p>Puede presentar la siguiente nota, completando la calle, sus intersecciones y firmada por al
+                        menos dos vecinos</p><br>
+                    <button class="dowloadNotas">
+                        <a href="./notas/Modelo Solicitud Vecinos luminaria - FOGOP.docx" rel="noopener"
+                            download="Modelo nota" class="button notas" key="text7">Descargar Modelo de Nota</a>
+                    </button>
+                </article>
+            </div>
+
+            <!-- Articulos... -->
+            <div class="align-p">
+                <article>
+                    <div class="box2">
+                        <!-- <button class="config-botton">02</button> -->
+                        <h4 class="sub-title2">
+                            <i class="fa-solid fa-check-double"></i>
+                            Obra
+                        </h4>
+                    </div>
+                    <p>La postes estaran soportada por una base de hormigón armado para mejorar la seguridad eléctrica y
+                        evitando la prematura oxidación, en condiciones normales se instalaran cinco columnas por calle.
+                    </p>
+                </article>
+                <article>
+                    <div class="box2">
+                        <!-- <button class="config-botton">03</button> -->
+                        <h4 class="sub-title2">
+                            <i class="fa-solid fa-check-double"></i>
+                            Instalacion
+                        </h4>
+                    </div>
+                    <p>La instalación será llevada a cabo por equipo técnico especializado, los mismos tendrán en cuenta
+                        cuenta arboles, entradas de garages, redes eléctrica, etc.</p>
+                </article>
+                <article>
+                    <div class="box2">
+                        <!-- <button class="config-botton">01</button> -->
+                        <h4 class="sub-title2">
+                            <i class="fa-solid fa-check-double"></i>
+                            Iluminacion
+                        </h4>
+                    </div>
+                    <p>La iluminación consta de columnas metálicas de 9 metros de altura con brazo/acople incorporado,
+                        donde se extiende una luminaria unilateral de 120W de potencia.</p><br>
+                </article>
+                
+            </div>
+        </section>
+
+        <section class="box beta">
+           
+            <div>
+                <article class="box-what">
+                    <h3 class="sub-title">Financiacion</h3>
+                    <p>La misma se financia de la siguiente manera:
+                        En su primera etapa, la obra se financiara totalmente con recursos de FOGOP, concluida la misma,
+                        los propietarios reintegraran parte del costo correspondiente a los materiales utilizados,
+                        pudiéndose financiar hasta en 18 cuotas fijas y sin interés a optar por el vecino.
+                    </p>
+                    <br>
+                    <p>El valor restante será afrontado por el municipio, como asi también la totalidad de los costos
+                        inherentes a la instalación(mano de obra)
+                        El importe mensual a abonar figurara en la boleta del impuesto inmobiliario, diferenciándose de
+                        tal con el concepto de “Contribucion por mejoras” o las siglas “aol”.
+                    </p><br>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- COMENTARIOS USUARIOS -->
+        <section>
+            
+
+            <div class="comentarios">
+                <div class="anisha">
+                    <img class="picture" src="./img/8.png" alt="Foto">
+                    <h4 class="name">En 1, 6, 12 o 18 Cuotas Fijas</h4>
+                    <p class="parrafo2">En caso de no optar por alguna de las opciones, se seleccionara por defecto en
+                        18 cuotas fijas</p>
+                </div>
+                <div class="ali">
+                    <img class="picture" src="./img/7.png" alt="Foto">
+                    <h4 class="name">Cuotas Fijas</h4>
+                    <p class="parrafo2">El valor de la cuota no se ajustara a la inflacion, es fija.</p>
+                </div>
+                <div class="richard">
+                    <img class="picture" src="./img/6.png" alt="Foto">
+                    <h4 class="name">Pago por unica vez</h4>
+                    <p class="parrafo2">El pago de caracter "Contribucion por mejoras", se abona una unica vez, comienza
+                        a pagar estando finalizada la obra</p>
+                </div>
+            </div><br><br><br>
+
+            <h3 id="pagos" class="title2">Donde abonar o Solicitar facturas impresas?</h3>
+
+            <section class="order-Grid">
+
+                <div class="grid-container">
+                    <div class="grid-item1">
+                        <h3>AREA</h3>
+                    </div>
+                    <div class="grid-item1">
+                        <h3>DIRECCION</h3>
+                    </div>
+                    <div class="grid-item1">
+                        <h3>HORARIOS</h3>
+                    </div>
+                    <div class="grid-item">
+                        <h4>ACOR</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Avenida La Paz 2440</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>7:30AM a 16PM</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Caja municipal de Prestamos</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Brasil 1275</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>7AM a 13PM y 15AM a 20:30PM</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>B° Molina Punta</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Las Margaritas y Jose Negro</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>8AM a 12AM</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>B° San Martin</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Mendoza y Lavalle</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>8AM a 12AM y 14:30PM a 19:30PM</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>B° Guemes</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Las Heras y Medrano</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>8AM a 12AM</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>B° 17 de Agosto</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Cazadores Correntinos 5600</h4>
+                    </div>
+                    <div class="grid-item">
+                        <h4>8AM a 12AM</h4>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+        <!-- PUNTOS, COMO DETALLE DE POSIBLE INTEGRACION DE SLIDE "SOLO EN MOBILE" -->
+        <div class="box3">
+            <div class="circulos">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+        </div>
+
+        <!-- simplify how your team... -->
+
+        <section class="box4">
+            <h2 class="sub-title3">Consulta el estado de Deuda o imprimi tus boletas en la pagina de ACOR.</h2><br>
+            <button class="bt3"><a href="https://acor.gob.ar/" target="_blank">ir a ACOR</a></button><br>
+        </section>
+        <h3 id="donde" class="title2">DONDE ESTAMOS</h3>
+
+        <section class="mapDirec">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.1427052872536!2d-58.83399698499008!3d-27.46481628289299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca702a91fc1%3A0x918624cb55c4a0d2!2s25%20de%20Mayo%201476%2C%20W3400%20BCT%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1673444592665!5m2!1ses-419!2sar"
+                width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="grid-ubi">
+            <div class="grid-container2">
+                <div class="grid-item2">
+                    <h3>Horarios de Atencion</h3>
+                </div>
+                <div class="grid-item3">
+                    <h3>Lunes a Viernes de 8AM a 13PM</h3>
+                </div>
+                <div class="grid-item2">
+                    <h3>Direccion</h3>
+                </div>
+                <div class="grid-item3">
+                    <h4>25 de Mayo 1476</h4>
+                </div>
+                <div class="grid-item2">
+                    <h4>Telefono</h4>
+                </div>
+                <div class="grid-item3">
+                    <h4>+54 9 379-4265994</h4>
+                </div>
+                <div class="grid-item2">
+                    <h4>Correo Electronico</h4>
+                </div>
+                <div class="grid-item3">
+                    <h4>fogopmcc@gmail.com</h4>
+                </div>
+                <div class="grid-item2">
+                    <h4>0800-MANTENIMIENTO</h4>
+                </div>
+                <div class="grid-item3">
+                    <a href="tel:080055556864">
+                        <h4>0800-55556864</h4>
+                    </a>
+                </div>
+            </div>
+           
+        </section>
+    </main>
+    <!-- FIN MAIN -->
+
+
+    <!-- INICIO FOOTER -->
+    <footer>
+
+        <!-- FORMULARIO -->
+        <section class="selector">
+            <div class="email-footer">
+                <div class="get-touch" data-aos="flip-right">
+                    <form action="https://formsubmit.co/leandev7@gmail.com" method="POST"
+                        onsubmit="return submitForm(this);" class="reservation">
+                        <div class="form-start">
+                            <label for="Name"></label>
+                            <!-- <h3>Nombre Completo</h3> -->
+                            <input class="form-name" type="text" name="name" class="lang" key="text108"
+                                placeholder="Ingresa tu nombre">
+                            <!-- required -->
+                            <label for="email"></label>
+                            <!-- <h3>Correo Electronico</h3> -->
+                            <input class="form-email" type="email" name="email" id="email" class="lang" key="text109"
+                                placeholder="Ingresa un Correo valido"><!-- required -->
+                        </div>
+                        <div class="form-text">
+                            <label for="Text"></label>
+                            <!-- <h3>Mensaje</h3> -->
+                            <textarea class="form-message" name="message" cols="20" rows="5" class="lang" key="text110"
+                                placeholder="Escribe tu mensaje..."></textarea><!-- required -->
+                        </div>
+                        <div class="verificar">
+                            <div class="errores">
+                                <ul id="parent"></ul>
+                            </div>
+                            <div class="form-send">
+                                <button id="button-sub" type="submit" class="lang" key="text111">Send a
+                                    Message!</button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                        <input type="hidden" name="_captcha" value="false"></input>
+                    </form>
+                </div>
+            </div>
+            </div>
+
+            
+        </section>
+
+        <section class="listas">
+            <ul class="lista1">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./notas/Modelo Solicitud Vecinos luminaria - FOGOP.docx" target="_blank">Modelo de Nota</a></li>
+                <li><a href="./notas/exenciones para pagos.pdf" target="_blank">Excentos de Pagos ART. 108°/109°</a>
+                </li>
+                <li><a href="https://sis.concejocorrientes.gob.ar/uploads/6837.pdf" target="_blank">Ordenanza N°
+                        6837</a></li>
+            </ul>
+            <ul class="lista2">
+                <li><a href="tel:080055556864" target="_blank">Mantenimiento</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="https://acor.gob.ar/" target="_blank">Pagina Acor</a></li>
+            </ul>
+        </section>
+        <!-- LOGOS REDES SOCIALES -->
+        <section class="column-footer">
+           
+
+            <!-- MARCA MANAGE/ISOTIPO+LOGOTIPO -->
+            <div class="logo-f">
+                <a href="#"><img src="img/logoFoot.png" alt="logo Manage"></a><br>
+            </div>
+            
+        </section>
+
+        <!-- COPYRIGHT QUE SE VISUALIZA EN MOBILE -->
+        <div>
+            <p class="copyright">Copyright 2022. All Rights Reserved - Disign&Developed by Leandro Martinez</p>
+        </div>
+
+        <!-- COPYRIGHT QUE SE VISUALIZA EN DESKTOP -->
+        <div class="cop">
+            <p class="copyright2">Copyright 2023. All Rights Reserved - Disign&Developed by <a class="copyright2" href="https://www.linkedin.com/in/leandromz/" target="_blank">Leandro Martinez</a></p>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+
+    
+</body>
+
+</html>
