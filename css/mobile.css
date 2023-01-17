@@ -110,7 +110,7 @@
     .copyright {
         display: flex;
         justify-content: center;
-        color: rgb(66, 66, 71);
+        color: rgb(57, 57, 60);
     }
     
     .selector {
@@ -231,7 +231,7 @@
     footer {
         padding: 0px 0px 15px;
         background: var(--footer);
-        height: 50rem;
+        height: 45rem;
     }
     .logo-f img {
         width: 60vw;
