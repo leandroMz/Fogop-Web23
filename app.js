@@ -1,7 +1,7 @@
 $(function () {
     $('#myButton').floatingWhatsApp({
         phone: '5493794265994',
-        popupMessage: 'Hola, en que podemos ayudarte?',
+        popupMessage: 'Hola, en que podemos ayudarte? ',
         message: "Hola, queria consultar acerca de ",
         showPopup: true,
         showOnIE: false,
