@@ -31,9 +31,7 @@ header {
     padding: .8rem 8%;
     display: flex;
     justify-content: space-between;
-    background: rgb(255,255,255);
-    background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(251,250,249,1) 40%, rgba(251,250,249,1) 56%, rgba(241,229,217,1) 66%, rgba(252,176,69,1) 95%, rgba(252,142,69,1) 100%);
-}
+    }
 
 h3,
 h4 {
@@ -68,11 +66,7 @@ section {
     justify-content: space-between;
 }
 
-footer {
-    padding: 0px 0px 15px;
-    background: var(--footer);
-    height: 24rem;
-}
+
 
 .ali,
 .anisha,
@@ -102,15 +96,7 @@ img {
 
 /* MAIN */
 /* Bring everyone... + grafico */
-.dowloadNotas {
-    padding: .7rem 0rem;
-    display: inline-block;
-    width: 18rem;
-    font-size: medium;
-    position: relative;
-    /* left: 1rem; */
-    top: 3rem;
-}
+
 
 .notas {
     color: azure;
@@ -145,9 +131,7 @@ article .box {
     padding: 10px;
 }
 
-.title {
-    font-size: 4rem;
-}
+
 
 /* .bt1 {
     padding: 13px 18px;
@@ -170,10 +154,7 @@ article .box {
 }
 
 /* COMENTARIOS USUARIOS */
-.title2 {
-    font-size: 2.451rem;
-    margin: 3.75rem;
-}
+
 
 .picture {
     margin: 1.31rem;
@@ -185,14 +166,7 @@ article .box {
 
 }
 
-.name {
-    margin: 1.31rem;
-    font-size: 1rem;
-}
 
-.parrafo2 {
-    margin: 1.31rem;
-}
 
 
 /* simplify how your team... */
@@ -202,10 +176,7 @@ article .box {
     margin: 0px;
 }
 
-.sub-title3 {
-    color: #FFFFFF;
-    font-size: 40px;
-}
+
 
 .bt3 {
     color: var(--botones);

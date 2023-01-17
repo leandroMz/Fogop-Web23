@@ -101,11 +101,16 @@
         justify-content: center;
         padding: 30px;
     }
+    .sub-title3 {
+        color: #FFFFFF;
+        font-size: 30px;
+    }
     
     /* FOOTER */
     .copyright {
         display: flex;
         justify-content: center;
+        color: rgb(66, 66, 71);
     }
     
     .selector {
@@ -162,5 +167,74 @@
         padding: 2rem;
     }
 
+
+
+    /* ULTIMA ACTUALIZACION */
+
+    header{
+        position: relative;
+        left: 4rem;
+    }
+
+    .marca img{
+        width: 13rem;
+    }
+    .graf img{
+        display: none;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .dowloadNotas{
+        position: relative;
+        bottom: 1rem;
+        right: 1.8rem;
+        font-size: .85rem;
+        width: 15rem;
+    }
+    .ali{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 6rem;
+        
+        
+    }
+    .name {
+        margin: 0.1rem;
+        font-size: 1rem;
+    }
+    
+    .parrafo2 {
+        
+        margin: 1rem 0rem;
+    }
+    .title2{
+        font-size: xx-large;
+    }
+    #donde{
+        position: relative;
+        left: 2.5rem;
+        top: 2rem;
+        padding: 5rem 0rem;
+    }
+    .mapDirec iframe{
+        display: none;
+    }
+    .mapDirec2{
+        position: relative;
+        bottom: 3rem;
+        right: 1.5rem;
+    }
+
+    footer {
+        padding: 0px 0px 15px;
+        background: var(--footer);
+        height: 50rem;
+    }
+    .logo-f img {
+        width: 60vw;
+    }
 
 }
