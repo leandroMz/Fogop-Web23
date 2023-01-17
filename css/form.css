@@ -85,6 +85,16 @@ button:hover {
 .form-send {
     display: flex;
     justify-content: right;
+    padding: .5rem .5rem;
+}
+.form-send button{
+    background-color: #e16e22;
+    padding: .3rem .8rem;
+}
+.form-send button:hover{
+    background-color: #c94808;
+    box-shadow: 0px 4px 8px rgba(12, 12, 12, 0.5);
+
 }
 
 div.errores {
@@ -98,25 +108,34 @@ div.errores {
     position: relative;
     right: 1rem;
     padding: 0.2rem;
-    font-size: 20px;
+    font-size: 22px;
     color: red;
 }
-
-.material-icons {
+#errorPush2 {
     display: flex;
     align-items: center;
     position: relative;
     right: 1rem;
     padding: 0.2rem;
-    font-size: 20px;
-    color: green;
+    font-size: 22px;
+    color: rgb(6, 148, 6);
 }
+
+/* .material-icons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 1rem;
+    padding: 0.9rem;
+    font-size: 16px;
+    color: green;
+} */
 
 .errores-push {
     position: relative;
-    top: 0.1rem;
+    bottom: 0.3rem;
     font-family: 'Kalam', cursive;
-    font-size: 0.9em;
+    font-size: 0.6em;
     color: var(--paragraph);
     padding: 0rem 0.6rem;
     

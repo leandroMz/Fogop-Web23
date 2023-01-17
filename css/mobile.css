@@ -1,6 +1,6 @@
 @media (max-width: 800px) {
 
-
+  
     /* DISPLAY NONE */
     .mn-dsktop {
         display: none;
@@ -236,5 +236,7 @@
     .logo-f img {
         width: 60vw;
     }
+
+    
 
 }

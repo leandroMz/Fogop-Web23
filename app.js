@@ -64,44 +64,44 @@ let acc = 0;
 //valido por campo
 //NOMBRE          
 if (nameForm.value == "") {
-  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text112">Name: (please fill in this field)</a></i>')
+  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text112">Nombre: (Por favor, completa este campo)</a></i>')
   nameForm.setAttribute("style","border-color: red;")
   acc+=0
 }else if(nameForm.value.length < 3){
-  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text113">Name: (please minimum three characters)</a></i>')
+  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text113">Nombre: (Por favor, un minimo de tres caracteres)</a></i>')
   nameForm.setAttribute("style","border-color: red;")    
   acc+=0
 }else if(soloLetras(nameForm.value)===false){
-  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text114">Name: (please only letters allowed)</a></i>')
+  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text114">Nombre: (Por favor, ingresa solo letras)</a></i>')
   nameForm.setAttribute("style","border-color: red;")    
   acc+=0
 }else{
-  errores.push('<i class="material-icons">check_circle<a class="errores-push lang" key="text115">Name Valid</a></i>')
+  errores.push('<i id="errorPush2" class="material-icons">check_circle<a class="errores-push lang" key="text115">Nombre valido</a></i>')
   nameForm.setAttribute("style","border-color:green;")    
   acc+=1
 }        
 //EMAIL
 if (emailForm.value == "") {
-  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text116">Email: (please fill in this field)</a></i>')
+  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text116">Email: (Por favor, completa este campo)</a></i>')
   emailForm.setAttribute("style","border-color: red;")
   
   acc+=0
 }else if(!validar_email(emailForm)){
-  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text117">Email: (please enter a valid email)</a></i>')
+  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text117">Email: (Por favor, ingresa un Correo valido)</a></i>')
   emailForm.setAttribute("style","border-color: red;")    
   acc+=0
 }else{
-  errores.push('<i class="material-icons">check_circle<a class="errores-push lang" key="text118">Email Valid</a></i>')
+  errores.push('<i id="errorPush2" class="material-icons">check_circle<a class="errores-push lang" key="text118">Correo valido</a></i>')
   emailForm.setAttribute("style","border-color: green;")    
   acc+=1
 }    
 //MENSAJE
 if (messageForm.value == "") {
-  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text119">Message: (please fill in this field)</a></i>')
+  errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text119">Mensaje: (Por favor, completa este campo)</a></i>')
   messageForm.setAttribute("style","border-color: red;")    
   acc+=0
 }else{
-  errores.push('<i class="material-icons">check_circle<a class="errores-push lang" key="text120">Message Valid</a></i>')
+  errores.push('<i id="errorPush2" class="material-icons">check_circle<a class="errores-push lang" key="text120">Mensaje valido</a></i>')
   messageForm.setAttribute("style","border-color: green;")    
   acc+=1
 }
