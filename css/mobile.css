@@ -108,9 +108,8 @@
     
     /* FOOTER */
     .copyright {
-        display: flex;
-        justify-content: center;
-        color: rgb(57, 57, 60);
+        color: #374354;
+        text-align: center;
     }
     
     .selector {
@@ -170,6 +169,7 @@
 
 
     /* ULTIMA ACTUALIZACION */
+    
 
     header{
         position: relative;
@@ -231,7 +231,7 @@
     footer {
         padding: 0px 0px 15px;
         background: var(--footer);
-        height: 45rem;
+        height: 49.4rem;
     }
     .logo-f img {
         width: 60vw;
