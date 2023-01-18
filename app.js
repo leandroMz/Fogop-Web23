@@ -140,11 +140,53 @@ return(reg.test(str))?true:false;
 
 
 // DETECCION DE HORARIO
-var currentDate = new Date();
-var day = currentDate.getDay();
-var hour = currentDate.getHours();
+// var currentDate = new Date();
+// var day = currentDate.getDay();
+// var hour = currentDate.getHours();
 
-if (day >= 1 && day <= 5) {
+
+// if (day >= 1 && day <= 5) {
+//   if (hour >= 8 && hour < 13) {
+//       document.getElementById("status").innerHTML = "Abierto";
+//       document.getElementById("status").classList.add("open");
+//       document.getElementById("hours").innerHTML = "Cierra a las 13:00";
+//   } else {
+//       document.getElementById("status").innerHTML = "Cerrado";
+//       document.getElementById("status").classList.add("closed");
+//       document.getElementById("hours").innerHTML = "Abre mañana a las 8:00";
+//   }
+// } else if (day == 5) {
+//   document.getElementById("status").innerHTML = "Cerrado";
+//   document.getElementById("status").classList.add("closed");
+//   document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+// } else {
+//   document.getElementById("status").innerHTML = "Cerrado";
+//   document.getElementById("status").classList.add("closed");
+//   document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+// }
+
+
+const holidays = [
+  {date: "01/17/2023", message: "Cerrado - Abre el miércoles a las 8:00"},
+  {date: "18/01/2023", message: "Cerrado - Abre el martes a las 8:00"},
+  {date: "19/01/2023", message: "Cerrado - Abre el lunes a las 8:00"}
+];
+const currentDate = new Date();
+const currentDateString = currentDate.toLocaleDateString();
+const day = currentDate.getDay();
+const hour = currentDate.getHours();
+
+let message = "";
+holidays.forEach(holiday => {
+  if(holiday.date === currentDateString){
+    message = holiday.message;
+  }
+});
+
+if(message){
+  document.getElementById("status").innerHTML = message;
+  document.getElementById("status").classList.add("closed");
+} else if (day >= 1 && day <= 5) {
   if (hour >= 8 && hour < 13) {
       document.getElementById("status").innerHTML = "Abierto";
       document.getElementById("status").classList.add("open");
@@ -159,9 +201,8 @@ if (day >= 1 && day <= 5) {
   document.getElementById("status").classList.add("closed");
   document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
 } else {
-  document.getElementById("status").innerHTML = "Cerrado";
-  document.getElementById("status").classList.add("closed");
-  document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
-}
-
-
+    document.getElementById("status").innerHTML = "Cerrado";
+    document.getElementById("status").classList.add("closed");
+    document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+  }
+{}

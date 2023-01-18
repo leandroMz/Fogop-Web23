@@ -299,7 +299,15 @@ background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%
     }
 
 
-
+    
+     
+      .grid-container {
+        display: grid;
+        grid-template-rows: 3rem;
+        grid-template-columns: 18rem 18rem 20rem;
+        grid-gap: 6px;
+      }
+     
 
 
     /* FIN FOOTER */
