@@ -5,8 +5,9 @@
 
 
     /* DISPLAY NONE */
-    header{background: rgb(255,255,255);
-        background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(251,250,249,1) 40%, rgba(251,250,249,1) 56%, rgba(241,229,217,1) 66%, rgba(252,176,69,1) 95%, rgba(252,142,69,1) 100%);
+    header{
+        background: rgb(255,255,255);
+background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 18%, rgba(251,250,249,1) 27%, rgba(251,250,249,1) 30%, rgba(251,250,249,1) 34%, rgba(249,242,236,1) 37%, rgba(241,229,217,1) 45%, rgba(245,227,212,1) 48%, rgba(252,176,69,1) 62%, rgba(237,128,101,1) 76%, rgba(243,96,59,1) 98%);
     }
     .hambur {
         display: none;
@@ -44,28 +45,42 @@
     /* HEADER */
     .desktop-menu a {
         border-radius: 0.8rem;
-        border: #cdb5b5 0.1px solid;
+        border: #e45e5e 0.1px solid;
         position: relative;
         display: inline-block;
         padding: 0.7rem 1rem;
         color: var(--text);
         font-size: 0.8rem;
-        overflow: hidden;
-        box-shadow: 0px 4px 8px rgba(147, 144, 143, 0.5);
-        background-color: rgb(241, 230, 230);
+        overflow: hidden;        
+        box-shadow: 2px 2px 2px 3px rgba(0,0,0,0.7);
+        
     }
 
     .desktop-menu {
-        color: var(--titulos);
         padding: 2rem 0rem;
         gap: 0.8rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+    .desktop-menu .navcolor2{
+        background: rgb(245,227,212);
+background: linear-gradient(90deg, rgba(245,227,212,1) 0%, rgba(252,176,69,1) 46%);
+    }
+    .desktop-menu .navcolor3{
+        background: rgb(252,176,69);
+background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(237,128,101,1) 46%);
+    }
+    .desktop-menu .navcolor4{
+        background: rgb(237,128,101);
+background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%);
+    }
+    .desktop-menu .navcolor5{
+        background: rgba(243,96,59,1)
+    }
 
-    .desktop-menu a:hover {
-        background-color: var(--botones);
+
+    .desktop-menu a:hover {        
         color: white;
         box-shadow: 0px 4px 8px rgba(175, 76, 52, 0.5);
     }

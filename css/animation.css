@@ -2,31 +2,38 @@
     display: flex;
     align-items: center;
  }
+ .grid-container h3{
+  color: #fff;
+ }
  .grid-container {
     display: grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 3rem;
+    grid-template-columns: 18rem 18rem 20rem;
     grid-gap: 6px;
   }
   
   .grid-item1 {
-    background: rgb(200, 200, 216);
+    background: rgb(102, 102, 150);
     text-align: center;
     align-self: center;    
-    border: black 2px solid;
+    border: rgb(255, 255, 255) 2px solid;
     padding: 0.4rem;
     border-radius: 5px;
-    
+    box-shadow: -7px 6px 22px -8px rgba(0,0,0,0.5);    
   }
   
   .grid-item {
-    background: rgb(244, 240, 240);
+    background: rgb(215, 210, 210);
     text-align: center;
     align-self: center;    
-    border: rgb(37, 36, 36) 1px solid;
+    border: rgb(255, 255, 255) 1px solid;
     padding: 0.4rem;
     border-radius: 5px;
     box-shadow: -7px 6px 22px -8px rgba(0,0,0,0.5);
+  }
+  .rowone{
+    background: rgb(244, 240, 240);
+
   }
 
   .grid-container2 {
