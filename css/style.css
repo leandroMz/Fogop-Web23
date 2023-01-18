@@ -180,8 +180,35 @@ article .box {
 
 .bt3 {
     color: var(--botones);
-    padding: 10px 25px;
+    padding: 15px 25px;
     background-color: #FFFFFF;
+    box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);
+}
+.bt3 i{
+    padding: 0rem 1rem 0rem 0rem;
+
+}
+.go-acor{
+    padding: 0rem .5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.phone800{
+    padding: 0rem .5rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.bt3:hover{
+background-color: #f6f6f8;
+box-shadow: 0px 4px 8px rgba(210, 104, 28, 0.7);
+}
+
+.bt3:hover .fa-share-from-square{
+    color: rgb(75, 75, 230);
+}
+.bt3:hover .fa-phone-volume{
+    color: #25D366;
 }
 
 .mapDirec {
@@ -202,6 +229,18 @@ article .box {
 }
 form h3{
 color: #eeebe8;
+}
+
+/* Mensaje abierto Cerrado */
+#status.open {
+    color: green;
+}
+
+#status.closed {
+    color: red;
+}
+.grid-container2 i{
+    font-size: 1.5rem;
 }
 
 /* FIN FOOTER */

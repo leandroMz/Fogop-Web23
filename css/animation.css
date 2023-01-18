@@ -31,26 +31,27 @@
 
   .grid-container2 {
     display: grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 400px 400px;
+    grid-template-rows: 2.5rem 2.5rem;
+    grid-template-columns: 2.5rem 20rem;
     grid-gap: 4px;
   }
   
   .grid-item2 {
-    background: rgb(200, 200, 216);
+    background: rgb(244, 240, 240);
     text-align: center;
     align-self: center;    
-    border: black 2px solid;
+    border: rgb(253, 253, 253) 2px solid;
     padding: 0.4rem;
     border-radius: 5px;
+    box-shadow: -7px 6px 22px -8px rgba(0,0,0,0.5);
     
   }
   
   .grid-item3 {
     background: rgb(244, 240, 240);
-    text-align: center;
+    text-align: left;
     align-self: center;    
-    border: rgb(37, 36, 36) 1px solid;
+    border: rgb(255, 255, 255) 1px solid;
     padding: 0.4rem;
     border-radius: 5px;
     box-shadow: -7px 6px 22px -8px rgba(0,0,0,0.5);

@@ -138,3 +138,30 @@ function soloLetras(str){
 return(reg.test(str))?true:false;
 } 
 
+
+// DETECCION DE HORARIO
+var currentDate = new Date();
+var day = currentDate.getDay();
+var hour = currentDate.getHours();
+
+if (day >= 1 && day <= 5) {
+  if (hour >= 8 && hour < 13) {
+      document.getElementById("status").innerHTML = "Abierto";
+      document.getElementById("status").classList.add("open");
+      document.getElementById("hours").innerHTML = "Cierra a las 13:00";
+  } else {
+      document.getElementById("status").innerHTML = "Cerrado";
+      document.getElementById("status").classList.add("closed");
+      document.getElementById("hours").innerHTML = "Abre mañana a las 8:00";
+  }
+} else if (day == 5) {
+  document.getElementById("status").innerHTML = "Cerrado";
+  document.getElementById("status").classList.add("closed");
+  document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+} else {
+  document.getElementById("status").innerHTML = "Cerrado";
+  document.getElementById("status").classList.add("closed");
+  document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+}
+
+

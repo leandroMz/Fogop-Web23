@@ -15,6 +15,9 @@
     .copyright {
         display: none;
     }
+    .mapDirec2{
+        display: none;
+    }
 
 
     /* GENERAL */
@@ -33,7 +36,7 @@
         
             padding: 0px 0px 15px;
             background: var(--footer);
-            height: 24rem;
+            height: 20rem;
         
     }
 
@@ -232,7 +235,7 @@
 
     .cop {
         position: absolute;
-        top: 286rem;
+        top: 281.8rem;
         width: 40%;
         padding: .5rem;
 
@@ -255,7 +258,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 25px;
+        padding: 30px;
         order: 2;
         text-align: left;
     }
@@ -273,7 +276,7 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        gap: 3rem;
+        /* gap: 3rem; */
     }
 
     .logo-f img {
