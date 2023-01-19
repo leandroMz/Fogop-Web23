@@ -43,7 +43,7 @@
         justify-content: space-evenly;
         padding: 0px 0px 15px;
         background: var(--footer);
-        /* height: 20rem; */
+        height: 20rem;
 
     }
 
@@ -294,20 +294,9 @@
 
 
 
-    .copyright2 {
-        color: #374354;
-
-
-    }
-
-    .cop {
-        position: absolute;
-        top: 291.8rem;
-        width: 40%;
-        padding: .5rem;
-
-
-    }
+    
+    
+    
     .listas a {
         color: rgb(206, 200, 200);
         padding: 0px 30px;
@@ -351,6 +340,20 @@
         /* gap: 3rem; */
     }
 
+    /* copyright */
+
+    .copyright2 {
+        color: #374354;
+    }
+        
+
+    .cop {
+        position: absolute;
+        top: 291.8rem;
+        width: 40%;
+        padding: .5rem;
+    }
+    
     .logo-f img {
         width: 12vw;
     }
@@ -405,4 +408,8 @@
     }
   
     /* FIN FOOTER */
+
+    /* PREGUNTA FRECUENTES */
+    
+    
 }
