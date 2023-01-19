@@ -27,11 +27,7 @@
 
 /* CONFIGURACIONES GENERALES */
 body{background-color: rgb(251, 250, 249)}
-header {
-    padding: .8rem 8%;
-    display: flex;
-    justify-content: space-between;
-    }
+
 
 h3,
 h4 {
@@ -48,15 +44,14 @@ button {
     border-radius: 50px;
     color: #FFFFFF;
     border: var(--botones);
-    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
-    /* max-width: 150px; */
+    box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);   
 }
 
 ul {
     list-style-type: none;
 }
 
-section {
+/* section {
     display: flex;
     padding: 0px 60px;
     margin: 30px 0px;
@@ -64,32 +59,18 @@ section {
     flex-direction: column;
     justify-content: center;
     justify-content: space-between;
-}
+} */
 
 
 
-.ali,
-.anisha,
-.richard {
-    background-color: #f4f4f5;
-    width: 30%;
-    border-radius: 1rem;
-}
+
 
 
 /* HEADER*/
 
-.marca,
-img {
-    font-stretch: 200px;
-    cursor: pointer;
-    transition: 2s;
-}
 
-.logotype {
-    height: 11vh;
-    width: 15vw;
-}
+
+
 
 /* FIN HEADER */
 
@@ -119,6 +100,11 @@ img {
 .graf {
     display: flex;
     flex-direction: column;
+}
+.dowloadNotas:hover{
+    background-color: #f3603b;   
+    box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
+    
 }
 
 article .box {
@@ -156,15 +142,7 @@ article .box {
 /* COMENTARIOS USUARIOS */
 
 
-.picture {
-    margin: 1.31rem;
-    height: 150px;
-    width: 150px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 8px rgba(129, 126, 125, 0.5);
 
-
-}
 
 
 
@@ -193,15 +171,11 @@ article .box {
     font-size: 2rem;
     font-weight: 700;
 }
-.phone800{
-    padding: 0rem .5rem;
-    font-size: 2rem;
-    font-weight: 900;
-}
+
 
 .bt3:hover{
 background-color: #f6f6f8;
-box-shadow: 0px 4px 8px rgba(210, 104, 28, 0.7);
+box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
 }
 
 .bt3:hover .fa-share-from-square{
@@ -221,12 +195,7 @@ box-shadow: 0px 4px 8px rgba(210, 104, 28, 0.7);
 
 
 /* FOOTER */
-.listas a {
-    color: rgb(206, 200, 200);
-    padding: 0px 30px;
-    line-height: 2;
-    font-size: 15px;
-}
+
 form h3{
 color: #eeebe8;
 }

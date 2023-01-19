@@ -5,10 +5,11 @@
 
 
     /* DISPLAY NONE */
-    header{
-        background: rgb(255,255,255);
-background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 18%, rgba(251,250,249,1) 27%, rgba(251,250,249,1) 30%, rgba(251,250,249,1) 34%, rgba(249,242,236,1) 37%, rgba(241,229,217,1) 45%, rgba(245,227,212,1) 48%, rgba(252,176,69,1) 62%, rgba(237,128,101,1) 76%, rgba(243,96,59,1) 98%);
+    header {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(118deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 18%, rgba(251, 250, 249, 1) 27%, rgba(251, 250, 249, 1) 30%, rgba(251, 250, 249, 1) 34%, rgba(249, 242, 236, 1) 37%, rgba(241, 229, 217, 1) 45%, rgba(245, 227, 212, 1) 48%, rgba(252, 176, 69, 1) 62%, rgba(237, 128, 101, 1) 76%, rgba(243, 96, 59, 1) 98%);
     }
+
     .hambur {
         display: none;
     }
@@ -16,13 +17,19 @@ background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
     .copyright {
         display: none;
     }
-    .mapDirec2{
+
+    .mapDirec2 {
         display: none;
     }
 
 
     /* GENERAL */
     header {
+
+        padding: .8rem 8%;
+        display: flex;
+        justify-content: space-between;
+
         display: flex;
         align-items: center;
     }
@@ -34,15 +41,23 @@ background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
     footer {
         display: flex;
         justify-content: space-evenly;
-        
-            padding: 0px 0px 15px;
-            background: var(--footer);
-            height: 20rem;
-        
+        padding: 0px 0px 15px;
+        background: var(--footer);
+        /* height: 20rem; */
+
     }
 
 
     /* HEADER */
+    .marca,
+    img {
+        font-stretch: 200px;
+    }
+    .logotype {
+        height: 11vh;
+        width: 15vw;
+    }
+
     .desktop-menu a {
         border-radius: 0.8rem;
         border: #e45e5e 0.1px solid;
@@ -51,9 +66,9 @@ background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
         padding: 0.7rem 1rem;
         color: var(--text);
         font-size: 0.8rem;
-        overflow: hidden;        
-        box-shadow: 2px 2px 2px 3px rgba(0,0,0,0.7);
-        
+        overflow: hidden;
+        box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.7);
+
     }
 
     .desktop-menu {
@@ -63,24 +78,28 @@ background: linear-gradient(118deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
         flex-direction: row;
         justify-content: space-between;
     }
-    .desktop-menu .navcolor2{
-        background: rgb(245,227,212);
-background: linear-gradient(90deg, rgba(245,227,212,1) 0%, rgba(252,176,69,1) 46%);
+
+    .desktop-menu .navcolor2 {
+        background: rgb(245, 227, 212);
+        background: linear-gradient(90deg, rgba(245, 227, 212, 1) 0%, rgba(252, 176, 69, 1) 46%);
     }
-    .desktop-menu .navcolor3{
-        background: rgb(252,176,69);
-background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(237,128,101,1) 46%);
+
+    .desktop-menu .navcolor3 {
+        background: rgb(252, 176, 69);
+        background: linear-gradient(90deg, rgba(252, 176, 69, 1) 0%, rgba(237, 128, 101, 1) 46%);
     }
-    .desktop-menu .navcolor4{
-        background: rgb(237,128,101);
-background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%);
+
+    .desktop-menu .navcolor4 {
+        background: rgb(237, 128, 101);
+        background: linear-gradient(90deg, rgba(237, 128, 101, 1) 0%, rgba(243, 96, 59, 1) 63%);
     }
-    .desktop-menu .navcolor5{
-        background: rgba(243,96,59,1)
+
+    .desktop-menu .navcolor5 {
+        background: rgba(243, 96, 59, 1)
     }
 
 
-    .desktop-menu a:hover {        
+    .desktop-menu a:hover {
         color: white;
         box-shadow: 0px 4px 8px rgba(175, 76, 52, 0.5);
     }
@@ -102,9 +121,10 @@ background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%
         padding: 1.25rem;
         margin: 20px 50px 0px 50px;
         text-align: left;
-    font-size: 4rem;
+        font-size: 4rem;
 
     }
+
     .dowloadNotas {
         padding: .7rem 0rem;
         display: inline-block;
@@ -114,11 +134,22 @@ background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%
         /* left: 1rem; */
         top: 3rem;
     }
+    
 
     .box h4 {
         padding: 0rem 6rem 1rem 2.8rem;
         font-size: larger;
         text-align: center;
+    }
+
+    section {
+        display: flex;
+        padding: 0px 60px;
+        margin: 30px 0px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
     }
 
     .column1 {
@@ -128,18 +159,35 @@ background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%
         flex-direction: row-reverse;
         justify-content: space-around;
     }
+    .cards-info {
+        /* background-color: #f4f4f5; */
+        width: 30%;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 8px rgba(129, 126, 125, 0.5);
+
+    }
+    .picture {
+        margin: 1.31rem;
+        height: 150px;
+        width: 150px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 8px rgba(129, 126, 125, 0.5);
+    }
+
     .name {
         margin: 1.31rem;
         font-size: 1rem;
     }
-    
+
     .parrafo2 {
         margin: 1.31rem;
     }
+
     .title2 {
         font-size: 2.451rem;
         margin: 3.75rem;
     }
+
     .sub-title3 {
         color: #FFFFFF;
         font-size: 40px;
@@ -234,7 +282,11 @@ background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%
         left: 3rem;
 
     }
-
+    .phone800{
+        padding: 0rem .5rem;
+        font-size: 2rem;
+        font-weight: 900;
+    }
     /* FIN MAIN */
 
 
@@ -256,7 +308,12 @@ background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%
 
 
     }
-
+    .listas a {
+        color: rgb(206, 200, 200);
+        padding: 0px 30px;
+        line-height: 2;
+        font-size: 15px;
+    }
     /* formulario correo*/
     .selector {
         width: 30rem;
@@ -299,16 +356,48 @@ background: linear-gradient(90deg, rgba(237,128,101,1) 0%, rgba(243,96,59,1) 63%
     }
 
 
-    
-     
-      .grid-container {
+
+
+    .grid-container {
         display: grid;
         grid-template-rows: 3rem;
         grid-template-columns: 18rem 18rem 20rem;
         grid-gap: 6px;
-      }
-     
+    }
 
+    .mapDirec iframe {
+        box-shadow: 0px 4px 8px rgba(38, 37, 37, 0.7);
 
+    }
+
+    /* SLIDERR */
+    .miSlider img {
+        width: 100%;
+        max-height: 100vh;
+        height: inherit;
+        object-fit: cover;
+        vertical-align: top;
+        transition: 2s;
+    }
+
+    .mensaje-foot{
+        display: none;
+    }
+    .form-name {
+        position: relative;
+        width: 35%;
+    }
+    
+    .form-email {
+        position: relative;
+        width: 65%;
+        margin-left: 0.2rem;
+    }
+    
+    .form-message {
+        position: relative;
+        width: 100%;
+    }
+  
     /* FIN FOOTER */
 }
