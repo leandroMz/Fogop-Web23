@@ -398,6 +398,11 @@
         position: relative;
         width: 100%;
     }
+    .verificar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
   
     /* FIN FOOTER */
 }

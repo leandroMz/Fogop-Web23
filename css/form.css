@@ -76,11 +76,7 @@ button:hover {
     cursor: pointer;
 }
 
-.verificar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .form-send {
     display: flex;

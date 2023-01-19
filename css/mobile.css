@@ -358,19 +358,19 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
 }
 .form-name {
     position: relative;
-    width: 25rem;
+    width: 20rem;
     margin: .1rem 0rem;
 }
 
 .form-email {
     position: relative;
-    width: 25rem;
+    width: 20rem;
     margin: .3rem 0rem;
 }
 
 .form-message {
     position: relative;
-    width: 25rem;
+    width: 20rem;
 }
 
 
