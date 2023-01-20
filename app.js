@@ -1,6 +1,6 @@
 localStorage.setItem("variable", "valor");
 var variable = localStorage.getItem("variable");
-console.log(variable);
+// console.log(variable);
 
 // CARROUSEL
 let indice = 1;
@@ -57,9 +57,9 @@ $(function () {
 
 // Horarios
 const holidays = [
-  {date: "01/17/2023", message: "Cerrado - Abre el miércoles a las 8:00"},
-  {date: "18/01/2023", message: "Cerrado - Abre el martes a las 8:00"},
-  {date: "19/01/2023", message: "Cerrado - Abre el lunes a las 8:00"}
+  {date: "17/1/2023", message: "Abre el miércoles a las 8:00"},
+  {date: "18/1/2023", message: "Abre el martes a las 8:00"},
+  {date: "19/1/2023", message: "Abre el sabado a las 8:00"}
 ];
 const currentDate = new Date();
 const currentDateString = currentDate.toLocaleDateString();
@@ -74,9 +74,10 @@ holidays.forEach(holiday => {
 });
 
 if(message){
-  document.getElementById("status").innerHTML = message;
+  document.getElementById("status").innerHTML = "Cerrado";
+  document.getElementById("hours").innerHTML = message;
   document.getElementById("status").classList.add("closed");
-} else if (day >= 1 && day <= 5) {
+} else if (day >= 1 && day < 5) {
   if (hour >= 8 && hour < 13) {
       document.getElementById("status").innerHTML = "Abierto";
       document.getElementById("status").classList.add("open");
