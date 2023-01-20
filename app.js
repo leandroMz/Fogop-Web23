@@ -1,21 +1,6 @@
 localStorage.setItem("variable", "valor");
 var variable = localStorage.getItem("variable");
-console.log(variable); // "valor"
-
-$(function () {
-    $('#myButton').floatingWhatsApp({
-        phone: '5493794265994',
-        popupMessage: 'Hola, en que podemos ayudarte? ',
-        message: "Hola, queria consultar acerca de ",
-        showPopup: true,
-        showOnIE: false,
-        position: 'right',
-        headerTitle: 'Bienveido a FOGOP!',
-        headerColor: '#25D366',
-        backgroundColor: 'transparent',
-        buttonImage: '<img src="/img/whatsapp.svg" />'
-    });
-});
+console.log(variable);
 
 // CARROUSEL
 let indice = 1;
@@ -55,6 +40,61 @@ function muestraSlides(n){
 
 window.addEventListener("scroll", muestraSlides, { passive: true });
 
+$(function () {
+  $('#myButton').floatingWhatsApp({
+      phone: '5493794265994',
+      popupMessage: 'Hola, en que podemos ayudarte? ',
+      message: "Hola, queria consultar acerca de ",
+      showPopup: true,
+      showOnIE: false,
+      position: 'right',
+      headerTitle: 'Bienveido a FOGOP!',
+      headerColor: '#25D366',
+      backgroundColor: 'transparent',
+      buttonImage: '<img src="/img/whatsapp.svg" />'
+  });
+});
+
+// Horarios
+const holidays = [
+  {date: "01/17/2023", message: "Cerrado - Abre el miércoles a las 8:00"},
+  {date: "18/01/2023", message: "Cerrado - Abre el martes a las 8:00"},
+  {date: "19/01/2023", message: "Cerrado - Abre el lunes a las 8:00"}
+];
+const currentDate = new Date();
+const currentDateString = currentDate.toLocaleDateString();
+const day = currentDate.getDay();
+const hour = currentDate.getHours();
+
+let message = "";
+holidays.forEach(holiday => {
+  if(holiday.date === currentDateString){
+    message = holiday.message;
+  }
+});
+
+if(message){
+  document.getElementById("status").innerHTML = message;
+  document.getElementById("status").classList.add("closed");
+} else if (day >= 1 && day <= 5) {
+  if (hour >= 8 && hour < 13) {
+      document.getElementById("status").innerHTML = "Abierto";
+      document.getElementById("status").classList.add("open");
+      document.getElementById("hours").innerHTML = "Cierra a las 13:00";
+  } else {
+      document.getElementById("status").innerHTML = "Cerrado";
+      document.getElementById("status").classList.add("closed");
+      document.getElementById("hours").innerHTML = "Abre mañana a las 8:00";
+  }
+} else if (day == 5) {
+  document.getElementById("status").innerHTML = "Cerrado";
+  document.getElementById("status").classList.add("closed");
+  document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+} else {
+    document.getElementById("status").innerHTML = "Cerrado";
+    document.getElementById("status").classList.add("closed");
+    document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+  }
 
 // VALIDACIONES 
 let forms = document.querySelector("form.reservation");
@@ -64,10 +104,7 @@ let nameForm = document.querySelector("input.form-name")
 let emailForm = document.querySelector("input.form-email")
 let messageForm = document.querySelector("textarea.form-message")
 let acc = 0;
-
-
-//valido por campo
-//NOMBRE          
+        
 if (nameForm.value == "") {
   errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text112">Nombre: (Por favor, completa este campo)</a></i>')
   nameForm.setAttribute("style","border-color: red;")
@@ -110,10 +147,7 @@ if (messageForm.value == "") {
   messageForm.setAttribute("style","border-color: green;")    
   acc+=1
 }
-// }
-//borro primero los errores sssssssssssssssssssssssssssssssssss
 borrarErrores()
-// si existe errores los muestro, sino: envio y muestro el SweetAlert
 if (acc<3) {
   e.preventDefault()
   let ulErrores = document.querySelector("div.errores ul")
@@ -144,69 +178,3 @@ return(reg.test(str))?true:false;
 } 
 
 
-// DETECCION DE HORARIO
-// var currentDate = new Date();
-// var day = currentDate.getDay();
-// var hour = currentDate.getHours();
-
-
-// if (day >= 1 && day <= 5) {
-//   if (hour >= 8 && hour < 13) {
-//       document.getElementById("status").innerHTML = "Abierto";
-//       document.getElementById("status").classList.add("open");
-//       document.getElementById("hours").innerHTML = "Cierra a las 13:00";
-//   } else {
-//       document.getElementById("status").innerHTML = "Cerrado";
-//       document.getElementById("status").classList.add("closed");
-//       document.getElementById("hours").innerHTML = "Abre mañana a las 8:00";
-//   }
-// } else if (day == 5) {
-//   document.getElementById("status").innerHTML = "Cerrado";
-//   document.getElementById("status").classList.add("closed");
-//   document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
-// } else {
-//   document.getElementById("status").innerHTML = "Cerrado";
-//   document.getElementById("status").classList.add("closed");
-//   document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
-// }
-
-
-const holidays = [
-  {date: "01/17/2023", message: "Cerrado - Abre el miércoles a las 8:00"},
-  {date: "18/01/2023", message: "Cerrado - Abre el martes a las 8:00"},
-  {date: "19/01/2023", message: "Cerrado - Abre el lunes a las 8:00"}
-];
-const currentDate = new Date();
-const currentDateString = currentDate.toLocaleDateString();
-const day = currentDate.getDay();
-const hour = currentDate.getHours();
-
-let message = "";
-holidays.forEach(holiday => {
-  if(holiday.date === currentDateString){
-    message = holiday.message;
-  }
-});
-
-if(message){
-  document.getElementById("status").innerHTML = message;
-  document.getElementById("status").classList.add("closed");
-} else if (day >= 1 && day <= 5) {
-  if (hour >= 8 && hour < 13) {
-      document.getElementById("status").innerHTML = "Abierto";
-      document.getElementById("status").classList.add("open");
-      document.getElementById("hours").innerHTML = "Cierra a las 13:00";
-  } else {
-      document.getElementById("status").innerHTML = "Cerrado";
-      document.getElementById("status").classList.add("closed");
-      document.getElementById("hours").innerHTML = "Abre mañana a las 8:00";
-  }
-} else if (day == 5) {
-  document.getElementById("status").innerHTML = "Cerrado";
-  document.getElementById("status").classList.add("closed");
-  document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
-} else {
-    document.getElementById("status").innerHTML = "Cerrado";
-    document.getElementById("status").classList.add("closed");
-    document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
-  }
