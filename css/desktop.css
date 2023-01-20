@@ -1,10 +1,4 @@
-/* CONFIG DESKTOP + 800PX */
-
-
 @media (min-width: 800px) {
-
-
-    /* DISPLAY NONE */
     header {
         background: rgb(255, 255, 255);
         background: linear-gradient(118deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 18%, rgba(251, 250, 249, 1) 27%, rgba(251, 250, 249, 1) 30%, rgba(251, 250, 249, 1) 34%, rgba(249, 242, 236, 1) 37%, rgba(241, 229, 217, 1) 45%, rgba(245, 227, 212, 1) 48%, rgba(252, 176, 69, 1) 62%, rgba(237, 128, 101, 1) 76%, rgba(243, 96, 59, 1) 98%);
@@ -22,14 +16,10 @@
         display: none;
     }
 
-
-    /* GENERAL */
     header {
-
         padding: .8rem 8%;
         display: flex;
         justify-content: space-between;
-
         display: flex;
         align-items: center;
     }
@@ -44,15 +34,13 @@
         padding: 0px 0px 15px;
         background: var(--footer);
         height: 20rem;
-
     }
 
-
-    /* HEADER */
     .marca,
     img {
         font-stretch: 200px;
     }
+
     .logotype {
         height: 11vh;
         width: 15vw;
@@ -68,7 +56,6 @@
         font-size: 0.8rem;
         overflow: hidden;
         box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.7);
-
     }
 
     .desktop-menu {
@@ -98,7 +85,6 @@
         background: rgba(243, 96, 59, 1)
     }
 
-
     .desktop-menu a:hover {
         color: white;
         box-shadow: 0px 4px 8px rgba(175, 76, 52, 0.5);
@@ -108,11 +94,6 @@
         padding: 13px 15px;
     }
 
-    /* FIN HEADER */
-
-
-    /* MAIN */
-    /* Bring everyone... + grafico */
     .graf img {
         margin: 0 3rem 0 0;
     }
@@ -122,7 +103,6 @@
         margin: 20px 50px 0px 50px;
         text-align: left;
         font-size: 4rem;
-
     }
 
     .dowloadNotas {
@@ -131,10 +111,8 @@
         width: 18rem;
         font-size: medium;
         position: relative;
-        /* left: 1rem; */
         top: 3rem;
     }
-    
 
     .box h4 {
         padding: 0rem 6rem 1rem 2.8rem;
@@ -159,13 +137,13 @@
         flex-direction: row-reverse;
         justify-content: space-around;
     }
+
     .cards-info {
-        /* background-color: #f4f4f5; */
         width: 30%;
         border-radius: 1rem;
         box-shadow: 0px 4px 8px rgba(129, 126, 125, 0.5);
-
     }
+
     .picture {
         margin: 1.31rem;
         height: 150px;
@@ -205,8 +183,6 @@
         font-size: larger;
     }
 
-
-    /* "whats different..." */
     .beta {
         display: flex;
         flex-direction: row;
@@ -223,9 +199,6 @@
         margin: 0px 20px 36px 0px;
     }
 
-
-
-    /* Articulos... */
     .box2 {
         display: flex;
         align-items: center;
@@ -242,8 +215,6 @@
         font-size: large;
     }
 
-
-    /* COMENTARIOS USUARIOS */
     .comentarios {
         display: flex;
         flex-direction: row;
@@ -261,8 +232,6 @@
         margin: 20px auto;
     }
 
-
-    /* simplify how your team... */
     .box4 {
         display: flex;
         flex-direction: row;
@@ -280,42 +249,29 @@
         box-shadow: 0px 4px 8px rgba(122, 36, 14, 0.5);
         position: relative;
         left: 3rem;
-
     }
-    .phone800{
+
+    .phone800 {
         padding: 0rem .5rem;
         font-size: 2rem;
         font-weight: 900;
     }
-    /* FIN MAIN */
 
-
-    /* FOOTER */
-
-
-
-    
-    
-    
     .listas a {
         color: rgb(206, 200, 200);
         padding: 0px 30px;
         line-height: 2;
         font-size: 15px;
     }
-    /* formulario correo*/
+
     .selector {
         width: 30rem;
-
         order: 3;
         justify-content: center;
         gap: 3rem;
     }
 
-
-    /* listas de shortcuts de informacion */
     .listas {
-
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -330,22 +286,16 @@
         justify-content: flex-start;
     }
 
-    /* logo */
     .column-footer {
-
         order: 1;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        /* gap: 3rem; */
     }
-
-    /* copyright */
 
     .copyright2 {
         color: #374354;
     }
-        
 
     .cop {
         position: absolute;
@@ -353,13 +303,10 @@
         width: 40%;
         padding: .5rem;
     }
-    
+
     .logo-f img {
         width: 12vw;
     }
-
-
-
 
     .grid-container {
         display: grid;
@@ -373,7 +320,7 @@
 
     }
 
-    /* SLIDERR */
+
     .miSlider img {
         width: 100%;
         max-height: 100vh;
@@ -383,33 +330,30 @@
         transition: 2s;
     }
 
-    .mensaje-foot{
+    .mensaje-foot {
         display: none;
     }
+
     .form-name {
         position: relative;
         width: 35%;
     }
-    
+
     .form-email {
         position: relative;
         width: 65%;
         margin-left: 0.2rem;
     }
-    
+
     .form-message {
         position: relative;
         width: 100%;
     }
+
     .verificar {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-  
-    /* FIN FOOTER */
 
-    /* PREGUNTA FRECUENTES */
-    
-    
 }

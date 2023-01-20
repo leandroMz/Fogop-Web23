@@ -42,11 +42,9 @@ body {
     color: #F9F9F9;
     text-decoration: none;
     border-radius: 10px;
-
     background-color: #F3603B;
     padding: .3rem .8rem;
-    box-shadow: 3px 4px 6px -1px rgba(0,0,0,1);
-    
+    box-shadow: 3px 4px 6px -1px rgba(0,0,0,1);    
 }
 
 .back-button a:hover {

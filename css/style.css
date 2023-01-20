@@ -26,9 +26,9 @@
 
 
 /* CONFIGURACIONES GENERALES */
-body{background-color: rgb(251, 250, 249)}
-
-
+body {
+    background-color: rgb(251, 250, 249)
+}
 h3,
 h4 {
     color: var(--titulos);
@@ -44,40 +44,12 @@ button {
     border-radius: 50px;
     color: #FFFFFF;
     border: var(--botones);
-    box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);   
+    box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);
 }
 
 ul {
     list-style-type: none;
 }
-
-/* section {
-    display: flex;
-    padding: 0px 60px;
-    margin: 30px 0px;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-between;
-} */
-
-
-
-
-
-
-/* HEADER*/
-
-
-
-
-
-/* FIN HEADER */
-
-
-/* MAIN */
-/* Bring everyone... + grafico */
-
 
 .notas {
     color: azure;
@@ -94,17 +66,16 @@ ul {
 
 .wppContact i {
     color: #25D366;
-
 }
 
 .graf {
     display: flex;
     flex-direction: column;
 }
-.dowloadNotas:hover{
-    background-color: #f3603b;   
+
+.dowloadNotas:hover {
+    background-color: #f3603b;
     box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
-    
 }
 
 article .box {
@@ -117,18 +88,11 @@ article .box {
     padding: 10px;
 }
 
-
-
-/* .bt1 {
-    padding: 13px 18px;
-} */
-
-/* "whats different..." */
 .sub-title {
     font-size: 2.25rem;
 }
 
-/* Articulos... */
+
 .sub-title2 {
     display: flex;
     align-items: center;
@@ -139,15 +103,12 @@ article .box {
     padding: 0rem 1rem;
 }
 
-/* COMENTARIOS USUARIOS */
 
 
 
 
 
 
-
-/* simplify how your team... */
 .box4 {
     height: 14rem;
     background: var(--botones);
@@ -162,26 +123,29 @@ article .box {
     background-color: #FFFFFF;
     box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);
 }
-.bt3 i{
+
+.bt3 i {
     padding: 0rem 1rem 0rem 0rem;
 
 }
-.go-acor{
+
+.go-acor {
     padding: 0rem .5rem;
     font-size: 2rem;
     font-weight: 700;
 }
 
 
-.bt3:hover{
-background-color: #f6f6f8;
-box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
+.bt3:hover {
+    background-color: #f6f6f8;
+    box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
 }
 
-.bt3:hover .fa-share-from-square{
+.bt3:hover .fa-share-from-square {
     color: rgb(75, 75, 230);
 }
-.bt3:hover .fa-phone-volume{
+
+.bt3:hover .fa-phone-volume {
     color: #25D366;
 }
 
@@ -191,16 +155,12 @@ box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
     justify-content: center;
 }
 
-/* FIN MAIN */
 
-
-/* FOOTER */
-
-form h3{
-color: #eeebe8;
+form h3 {
+    color: #eeebe8;
 }
 
-/* Mensaje abierto Cerrado */
+
 #status.open {
     color: green;
 }
@@ -208,8 +168,8 @@ color: #eeebe8;
 #status.closed {
     color: red;
 }
-.grid-container2 i{
+
+.grid-container2 i {
     font-size: 1.5rem;
 }
 
-/* FIN FOOTER */
