@@ -1,3 +1,7 @@
+localStorage.setItem("variable", "valor");
+var variable = localStorage.getItem("variable");
+console.log(variable); // "valor"
+
 $(function () {
     $('#myButton').floatingWhatsApp({
         phone: '5493794265994',
@@ -12,9 +16,6 @@ $(function () {
         buttonImage: '<img src="/img/whatsapp.svg" />'
     });
 });
-
-
-
 
 // CARROUSEL
 let indice = 1;
