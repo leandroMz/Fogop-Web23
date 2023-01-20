@@ -51,7 +51,7 @@ $(function () {
       headerTitle: 'Bienveido a FOGOP!',
       headerColor: '#25D366',
       backgroundColor: 'transparent',
-      buttonImage: '<img src="/img/whatsapp.svg" />'
+      buttonImage: '<img src="/img/whatsapp.svg" alt="logo de Whatsapp, Fogop contacto"/>'
   });
 });
 
