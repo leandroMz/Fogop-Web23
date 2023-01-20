@@ -31,6 +31,7 @@ function posicionSlide(n){
 setInterval(function tiempo(){
     muestraSlides(indice+=1)
 },4000);
+
 function muestraSlides(n){
     let i;
     let slides = document.getElementsByClassName('miSlider');
@@ -51,6 +52,9 @@ function muestraSlides(n){
     slides[indice-1].style.display = 'block';
     barras[indice-1].className += ' active';
 }
+
+window.addEventListener("scroll", muestraSlides, { passive: true });
+
 
 // VALIDACIONES 
 let forms = document.querySelector("form.reservation");
@@ -206,4 +210,3 @@ if(message){
     document.getElementById("status").classList.add("closed");
     document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
   }
-{}
