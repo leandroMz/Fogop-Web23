@@ -10,7 +10,10 @@
     .desc-mobile {
         display: none;
     }
+    .saltoNone{
+        display: none;
 
+    }
     p {
         margin: 18px;
     }
@@ -56,12 +59,15 @@
     .box4 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0rem;
-        padding: 60px 20px 50px 20px;
+        align-items: center;        
+        padding: 2.3rem 1rem;        
+        background: var(--botones);        
+        box-shadow: 1px 5px 10px 5px rgba(87, 84, 84, 0.9);        
     }
-
+    .dondeEst {
+        margin: 0rem 1rem;
+        text-align: center;
+    }
     .circulos {
         display: flex;
         flex-direction: row;
@@ -80,7 +86,9 @@
         border-radius: 50px;
         border: #f3603b 1.5px solid;
     }
-
+    .saltoSeparado2{
+        padding: 2.5rem 0rem 0rem;
+      }
     .box3 {
         display: flex;
         flex-direction: column;
@@ -103,10 +111,10 @@
     }
 
     .copyright2 {
-        color: #374354;
+        color: #2e3745;
         text-align: center;
-        font-size: 1rem;
-        padding: 3rem 0rem 0rem;
+        font-size: small;
+        padding: 1.5rem 0rem 0rem;
     }
 
     .selector {
@@ -158,13 +166,13 @@
         width: 70%;
     }
 
-    header {
+    /* header {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(251, 250, 249, 1) 71%, rgba(201, 201, 199, 1) 78%, rgba(30, 30, 38, 1) 91%);
-    }
+    } */
 
     .marca {
-        padding: 1rem 0rem 4rem;
+        padding: 1rem 0rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -207,6 +215,8 @@
         justify-content: center;
         justify-content: space-between;
     }
+
+   
 
     .box {
         padding: 30px 0px 0px;
@@ -258,6 +268,9 @@
     }
 
     .title2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.451rem;
         font-size: x-large;
     }
 
@@ -273,15 +286,26 @@
         font-size: x-small;
     }
 
-    .mobile-grid {
+    .mobile-grid,
+    .detail-grid {
         display: none;
     }
+
 
     .grid-container {
         display: grid;
         grid-template-rows: 2rem;
         grid-template-columns: 11rem 10rem;
         grid-gap: 6px;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 2.5rem 20rem;
+    }
+
+    .grid-item2 {
+        padding: 0.4rem;
+        border-radius: 5px;
     }
 
     #donde {
@@ -323,18 +347,18 @@
         background: var(--footer);
     }
 
-    .box4 {
-        box-shadow: 1px 2px 13px 11px rgb(122, 115, 114);
-    }
+    
 
     .list-desk {
         display: none;
     }
 
+    
     .mensaje-foot {
-        padding: 2rem 0rem;
+        padding: 2rem 0rem .5rem;
         color: #FFFFFF;
         font-size: 2rem;
+        text-align: center;
     }
 
     .form-start {

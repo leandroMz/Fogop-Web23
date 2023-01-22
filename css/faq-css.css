@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Scada:ital@1&display=swap');
+
+:root {
+    --titulos: #232851;
+    --parrafos: #B3B2B7;
+    --fontTitulos: 'Montserrat', sans-serif;
+    --fontParrafos: 'Scada', sans-serif;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 21%, rgba(245, 234, 234, 1) 41%, rgba(125, 117, 117, 1) 100%);
     margin: 0;
     padding: 0;
+}
+
+h1{
+    font-family: var(--fontTitulos);
+    color: var(--titulos);
+}
+
+
+p {    
+    font-family: var(--fontParrafos);
+    font-size: large;
 }
 
 .faq-container {
@@ -11,7 +32,7 @@ body {
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .faq-question {
@@ -22,7 +43,8 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #3C3C3C;
+    font-family: var(--fontTitulos);
+    color: var(--titulos);
 }
 
 .faq-question p {
@@ -44,19 +66,25 @@ body {
     border-radius: 10px;
     background-color: #F3603B;
     padding: .3rem .8rem;
-    box-shadow: 3px 4px 6px -1px rgba(0,0,0,1);    
+    box-shadow: 3px 4px 6px -1px rgba(0, 0, 0, 1);
 }
 
 .back-button a:hover {
     color: white;
-    background-color: #f3603b;   
+    background-color: #f3603b;
     box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
 }
 
-#logo-img{
+#logo-img {
     width: 250px;
-    height:auto;
+    height: auto;
     margin: 2rem auto;
     display: block;
     padding-top: 20px;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }

@@ -8,10 +8,6 @@
         display: none;
     }
 
-    .copyright {
-        display: none;
-    }
-
     .mapDirec2 {
         display: none;
     }
@@ -29,11 +25,8 @@
     }
 
     footer {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0px 0px 15px;
         background: var(--footer);
-        height: 20rem;
+        /* height: 20rem; */
     }
 
     .marca,
@@ -96,6 +89,8 @@
 
     .graf img {
         margin: 0 3rem 0 0;
+   box-shadow: -7px 20px 22px -8px rgba(0, 0, 0, 0.9);
+
     }
 
     .title {
@@ -118,12 +113,13 @@
         padding: 0rem 6rem 1rem 2.8rem;
         font-size: larger;
         text-align: center;
+        
     }
 
     section {
         display: flex;
-        padding: 0px 60px;
-        margin: 30px 0px;
+        padding: 0rem 3.75rem;
+        margin: 1.875rem 0rem;
         text-align: center;
         flex-direction: column;
         justify-content: center;
@@ -131,7 +127,7 @@
     }
 
     .column1 {
-        margin: 3rem 0rem;
+        /* margin: 3rem 0rem; */
         padding: 40px;
         display: flex;
         flex-direction: row-reverse;
@@ -162,8 +158,17 @@
     }
 
     .title2 {
+        display: flex;
+        justify-content: center;
         font-size: 2.451rem;
-        margin: 3.75rem;
+    }
+
+    .dondeAbo {
+        margin: 2rem 0rem .5rem;
+    }
+
+    .dondeEst {
+        margin: 4rem 0rem 3rem;
     }
 
     .sub-title3 {
@@ -233,10 +238,15 @@
     }
 
     .box4 {
+        height: 13rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        background-color: var(--botones);
+        margin: 3.5rem 0rem 0rem;
+   box-shadow: -7px 10px 22px -8px rgba(0, 0, 0, 0.9);
+
     }
 
     .sub-title3 {
@@ -257,55 +267,50 @@
         font-weight: 900;
     }
 
-    .listas a {
-        color: rgb(206, 200, 200);
-        padding: 0px 30px;
-        line-height: 2;
-        font-size: 15px;
+
+
+
+    .order-footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem 0rem 0rem;
     }
 
-    .selector {
-        width: 30rem;
-        order: 3;
-        justify-content: center;
-        gap: 3rem;
+    .cop {
+        text-align: center;
+        padding: .8rem 0rem .5rem;
+    }
+
+    .copyright2 {
+        font-size: small;
+        color: #2e3745;
     }
 
     .listas {
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 30px;
-        order: 2;
         text-align: left;
     }
 
-    .listas1 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+    .listas a {
+        color: rgb(206, 200, 200);
+        padding: 0px 30px;
+        line-height: 2;
+        font-size: 1rem;
     }
 
-    .column-footer {
-        order: 1;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
+    /* FORM */
+    .selector {
+        width: 30rem;
+        gap: 3rem;
     }
-
-    .copyright2 {
-        color: #374354;
-    }
-
-    .cop {
-        position: absolute;
-        top: 291.8rem;
-        width: 40%;
-        padding: .5rem;
-    }
-
     .logo-f img {
         width: 12vw;
+    }
+
+    .grid-ubi {
+        margin: 0rem 0rem 3rem;
     }
 
     .grid-container {
@@ -313,6 +318,19 @@
         grid-template-rows: 3rem;
         grid-template-columns: 18rem 18rem 20rem;
         grid-gap: 6px;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 9rem 20rem;
+    }
+
+    .grid-container2 i {
+        display: none;
+    }
+
+    .grid-item2 {
+        padding: .6rem;
+        border-radius: 5px;
     }
 
     .mapDirec iframe {
@@ -330,8 +348,12 @@
         transition: 2s;
     }
 
+    
     .mensaje-foot {
-        display: none;
+        padding: 0rem 0rem .5rem;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        text-align: left;
     }
 
     .form-name {

@@ -15,7 +15,7 @@ function posicionSlide(n){
 }
 setInterval(function tiempo(){
     muestraSlides(indice+=1)
-},4000);
+},4500);
 
 function muestraSlides(n){
     let i;
@@ -57,9 +57,9 @@ $(function () {
 
 // Horarios
 const holidays = [
-  {date: "17/1/2023", message: "Abre el miércoles a las 8:00"},
-  {date: "18/1/2023", message: "Abre el martes a las 8:00"},
-  {date: "19/1/2023", message: "Abre el sabado a las 8:00"}
+  {date: "17/1/2023", message: "- Abre el miércoles a las 8:00"},
+  {date: "18/1/2023", message: "- Abre el martes a las 8:00"},
+  {date: "19/1/2023", message: "- Abre el sabado a las 8:00"}
 ];
 const currentDate = new Date();
 const currentDateString = currentDate.toLocaleDateString();
@@ -81,20 +81,20 @@ if(message){
   if (hour >= 8 && hour < 13) {
       document.getElementById("status").innerHTML = "Abierto";
       document.getElementById("status").classList.add("open");
-      document.getElementById("hours").innerHTML = "Cierra a las 13:00";
+      document.getElementById("hours").innerHTML = "- Cierra a las 13:00";
   } else {
       document.getElementById("status").innerHTML = "Cerrado";
       document.getElementById("status").classList.add("closed");
-      document.getElementById("hours").innerHTML = "Abre mañana a las 8:00";
+      document.getElementById("hours").innerHTML = "- Abre mañana a las 8:00";
   }
 } else if (day == 5) {
   document.getElementById("status").innerHTML = "Cerrado";
   document.getElementById("status").classList.add("closed");
-  document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+  document.getElementById("hours").innerHTML = "- Abre Lunes a las 8:00";
 } else {
     document.getElementById("status").innerHTML = "Cerrado";
     document.getElementById("status").classList.add("closed");
-    document.getElementById("hours").innerHTML = "Abre Lunes a las 8:00";
+    document.getElementById("hours").innerHTML = "- Abre Lunes a las 8:00";
   }
 
 // VALIDACIONES 
