@@ -10,18 +10,14 @@
     .desc-mobile {
         display: none;
     }
-    .saltoNone{
+
+    .saltoNone {
         display: none;
 
     }
+
     p {
         margin: 18px;
-    }
-
-    .hambur {
-        position: relative;
-        top: -7px;
-        cursor: pointer;
     }
 
     .box-what {
@@ -62,27 +58,31 @@
         background-color: #FFFFFF;
         box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);
     }
-    
+
     .bt3 i {
-        padding: 0rem 1rem 0rem 0rem;    
+        padding: 0rem 1rem 0rem 0rem;
     }
+
     .go-acor {
         padding: 0rem .5rem;
         font-size: 1.5rem;
         font-weight: 700;
     }
+
     .box4 {
         display: flex;
         flex-direction: column;
-        align-items: center;        
-        padding: 2.3rem 1rem;        
-        background: var(--botones);        
-        box-shadow: 1px 5px 10px 5px rgba(87, 84, 84, 0.9);        
+        align-items: center;
+        padding: 2.3rem 1rem;
+        background: var(--botones);
+        box-shadow: 1px 5px 10px 5px rgba(87, 84, 84, 0.9);
     }
+
     .dondeEst {
         margin: 0rem 1rem;
         text-align: center;
     }
+
     .circulos {
         display: flex;
         flex-direction: row;
@@ -101,9 +101,11 @@
         border-radius: 50px;
         border: #f3603b 1.5px solid;
     }
-    .saltoSeparado2{
+
+    .saltoSeparado2 {
         padding: 2.5rem 0rem 0rem;
-      }
+    }
+
     .box3 {
         display: flex;
         flex-direction: column;
@@ -185,16 +187,27 @@
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(251, 250, 249, 1) 71%, rgba(201, 201, 199, 1) 78%, rgba(30, 30, 38, 1) 91%);
     } */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
     .marca {
         padding: 1rem 0rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex;       
     }
 
     .marca img {
         width: 15rem;
+    }
+
+    .hambur-desktop {
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        font-size: 2.5rem;
     }
 
     .slide-contenedor {
@@ -231,7 +244,7 @@
         justify-content: space-between;
     }
 
-   
+
 
     .box {
         padding: 30px 0px 0px;
@@ -362,13 +375,13 @@
         background: var(--footer);
     }
 
-    
+
 
     .list-desk {
         display: none;
     }
 
-    
+
     .mensaje-foot {
         padding: 2rem 0rem .5rem;
         color: #FFFFFF;
