@@ -115,7 +115,7 @@ forms.addEventListener("submit", function (e) {
     nameForm.setAttribute("style", "border-color: red;")
     acc += 0
   } else if (nameForm.value.length < 3) {
-    errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text113">Nombre: (Por favor, un minimo de tres caracteres)</a></i>')
+    errores.push('<i id="errorPush" class="material-icons">error_outline<a class="errores-push lang" key="text113">Nombre: (Por favor, minimo tres caracteres)</a></i>')
     nameForm.setAttribute("style", "border-color: red;")
     acc += 0
   } else if (soloLetras(nameForm.value) === false) {
