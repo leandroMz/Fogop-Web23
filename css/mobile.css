@@ -56,6 +56,21 @@
         padding: 13px 18px;
     }
 
+    .bt3 {
+        color: var(--botones);
+        padding: .5rem 1rem;
+        background-color: #FFFFFF;
+        box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);
+    }
+    
+    .bt3 i {
+        padding: 0rem 1rem 0rem 0rem;    
+    }
+    .go-acor {
+        padding: 0rem .5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
     .box4 {
         display: flex;
         flex-direction: column;

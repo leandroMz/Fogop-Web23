@@ -141,35 +141,9 @@ article .box {
     padding: 0rem 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-.bt3 {
-    color: var(--botones);
-    padding: 15px 25px;
-    background-color: #FFFFFF;
-    box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);
+i{
+    color: var(--titulos);
 }
-
-.bt3 i {
-    padding: 0rem 1rem 0rem 0rem;
-
-}
-
-.go-acor {
-    padding: 0rem .5rem;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-
 .bt3:hover {
     background-color: #f6f6f8;
     box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
