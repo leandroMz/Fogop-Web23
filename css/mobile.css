@@ -1,7 +1,5 @@
 @media (max-width: 800px) {
-    .mn-dsktop {
-        display: none;
-    }
+    
 
     .btton {
         display: none;
@@ -193,6 +191,44 @@
         justify-content: space-around;
     }
 
+    /* HAMBUR MODE */
+    .mn-dsktop{
+        display: none;
+        background-color: var(--footerBack);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        color: white;
+        padding: 20px;
+    }
+    .desktop-menu a{
+        color: var(--parrafos);        
+        line-height: 3rem;
+    }
+    .mn-dsktop.show-menu{
+        display: block;
+        animation: slide-in 0.5s ease-out;
+        z-index: 9999;
+    }
+    
+    @keyframes slide-in {
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    .close-menu{
+        background-color: #2e3745;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* FIN HAMBUR */
     .marca {
         padding: 1rem 0rem;
         display: flex;       

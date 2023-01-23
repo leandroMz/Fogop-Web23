@@ -184,4 +184,19 @@ function soloLetras(str) {
   return (reg.test(str)) ? true : false;
 }
 
+document.querySelector(".hambur-desktop").addEventListener("click", function(){
+  document.querySelector(".mn-dsktop").classList.toggle("show-menu");
+});
+
+document.querySelector(".close-menu").addEventListener("click", function(){
+  document.querySelector(".mn-dsktop").classList.remove("show-menu");
+});
+
+let menuOptions = document.querySelectorAll(".desktop-menu li");
+
+menuOptions.forEach(function(option) {
+  option.addEventListener("click", function(){
+      document.querySelector(".mn-dsktop").classList.remove("show-menu");
+  });
+});
 
