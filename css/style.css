@@ -3,6 +3,7 @@
 @import 'animation.css';
 @import 'form.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Scada:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Scada:ital@0;1&display=swap');
 
 
 
@@ -46,6 +47,8 @@ p {
     color: var(--parrafos);
     font-family: var(--fontParrafos);
     font-size: large;
+    font-style: italic;
+
 }
 
 button {
@@ -112,7 +115,7 @@ h2,h3,h4,.bt3{
 }
 
 .dowloadNotas:hover {
-    background-color: #f3603b;
+    background-color:var(--cintas);
     box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
 }
 
@@ -142,7 +145,7 @@ article .box {
 }
 
 i{
-    color: var(--titulos);
+    color: var(--botones);
 }
 .bt3:hover {
     background-color: #f6f6f8;

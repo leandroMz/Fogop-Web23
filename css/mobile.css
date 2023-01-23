@@ -1,7 +1,7 @@
 @media (max-width: 800px) {
     
 
-    .btton {
+    .btton, .program-title {
         display: none;
     }
 
@@ -186,8 +186,7 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(251, 250, 249, 1) 71%, rgba(201, 201, 199, 1) 78%, rgba(30, 30, 38, 1) 91%);
     } */
     header {
-        background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 63%, rgba(212,62,133,1) 100%, rgba(194,35,110,1) 100%);
+        background-color: var(--botones);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -253,10 +252,12 @@ font-size: 3rem;
 
     .hambur-desktop {
         cursor: pointer;
+        
     }
 
     .fa-bars {
         font-size: 2.5rem;
+        color: var(--fondoBack);
     }
 
     .slide-contenedor {
