@@ -186,6 +186,8 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(251, 250, 249, 1) 71%, rgba(201, 201, 199, 1) 78%, rgba(30, 30, 38, 1) 91%);
     } */
     header {
+        background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 63%, rgba(212,62,133,1) 100%, rgba(194,35,110,1) 100%);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -194,7 +196,7 @@
     /* HAMBUR MODE */
     .mn-dsktop{
         display: none;
-        background-color: var(--footerBack);
+        background-image: linear-gradient(to left top, #c2236e, #bc3e92, #ad57b1, #966dcb, #7881dd, #7d90e4, #849fea, #8eaeef, #b2c0f3, #d0d4f6, #e9e9fa, #ffffff);
         position: absolute;
         top: 0;
         right: 0;
@@ -203,9 +205,13 @@
         color: white;
         padding: 20px;
     }
+    .desktop-menu li{
+        padding: 2rem 1rem;
+    }
     .desktop-menu a{
-        color: var(--parrafos);        
-        line-height: 3rem;
+        color: var(--titulos); 
+        font-size: 1.3rem;       
+        /* line-height: 3rem; */
     }
     .mn-dsktop.show-menu{
         display: block;
@@ -222,11 +228,18 @@
         }
     }
     .close-menu{
-        background-color: #2e3745;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: transparent;
+        padding: .05rem .05rem;
     }
+    .close-menu:hover{
+    box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
+
+    }
+    .close-menu i{
+color: var(--botones);
+font-size: 3rem;
+    }
+    
     
     /* FIN HAMBUR */
     .marca {
