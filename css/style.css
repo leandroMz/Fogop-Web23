@@ -89,6 +89,17 @@ h3{
     font-family: var(--fontParrafos);
     color: var(--titulos);
 }
+h5{
+    font-family: var(--fontParrafos);
+    color: var(--parrafos);
+    font-size: larger;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    text-align: center;
+}
 #status, #hours{
     font-family: var(--fontTitulos);
     font-weight: 700;

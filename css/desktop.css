@@ -2,12 +2,13 @@
     header {
         /* background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 63%, rgba(212,62,133,1) 100%, rgba(194,35,110,1) 100%); */
-background-color: var(--botones);
-}
+        background-color: var(--botones);
+    }
 
-.close-menu{
-    display: none;
-}
+    .close-menu {
+        display: none;
+    }
+
     .hambur-desktop {
         display: none;
     }
@@ -42,16 +43,18 @@ background-color: var(--botones);
         height: 11vh;
         width: 15vw;
     }
-    
+
     .program-title {
         font-family: var(--fontParrafos);
         font-style: italic;
-        text-align: center; 
-        margin-bottom: 10px; 
-        font-size: 1.3em; /* Tamaño de la fuente */
-        color: rgb(255, 255, 255); /* Color de la fuente */
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+        /* Tamaño de la fuente */
+        color: rgb(255, 255, 255);
+        /* Color de la fuente */
     }
-    
+
     .desktop-menu a {
         /* border-radius: 0.5rem; */
         font-family: var(--fontParrafos);
@@ -91,7 +94,7 @@ background-color: var(--botones);
     .desktop-menu .navcolor5 {
         background: rgba(243, 96, 59, 1)
     } */
-    .desktop-menu a{
+    .desktop-menu a {
         color: #FFFFFF;
         background-color: var(--botones);
         box-shadow: 0px 4px 8px rgba(188, 38, 148, 0.5);
@@ -109,7 +112,7 @@ background-color: var(--botones);
 
     .graf img {
         margin: 0 3rem 0 0;
-   box-shadow: -7px 20px 22px -8px rgba(0, 0, 0, 0.9);
+        box-shadow: -7px 20px 22px -8px rgba(0, 0, 0, 0.9);
 
     }
 
@@ -133,7 +136,7 @@ background-color: var(--botones);
         padding: 0rem 6rem 1rem 2.8rem;
         font-size: larger;
         text-align: center;
-        
+
     }
 
     section {
@@ -240,6 +243,10 @@ background-color: var(--botones);
         font-size: large;
     }
 
+    .orderContr {
+        text-align: left;
+    }
+
     .comentarios {
         display: flex;
         flex-direction: row;
@@ -265,7 +272,7 @@ background-color: var(--botones);
         justify-content: space-evenly;
         background-color: var(--botones);
         margin: 3.5rem 0rem 0rem;
-   box-shadow: -7px 10px 22px -8px rgba(0, 0, 0, 0.9);
+        box-shadow: -7px 10px 22px -8px rgba(0, 0, 0, 0.9);
 
     }
 
@@ -293,11 +300,12 @@ background-color: var(--botones);
         background-color: #FFFFFF;
         box-shadow: 1px 6px 10px rgba(29, 28, 28, 1);
     }
-    
+
     .bt3 i {
         padding: 0rem 1rem 0rem 0rem;
-    
+
     }
+
     .go-acor {
         padding: 0rem .5rem;
         font-size: 2rem;
@@ -340,6 +348,7 @@ background-color: var(--botones);
         width: 30rem;
         gap: 3rem;
     }
+
     .logo-f img {
         width: 12vw;
     }
@@ -383,7 +392,7 @@ background-color: var(--botones);
         transition: 2s;
     }
 
-    
+
     .mensaje-foot {
         padding: 0rem 0rem .5rem;
         color: #FFFFFF;
