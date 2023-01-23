@@ -200,3 +200,17 @@ menuOptions.forEach(function(option) {
   });
 });
 
+
+// Obtener la imagen
+const img = document.getElementById("img-zoom");
+
+// Aumentar el tamaño de la imagen en un 20% al pasar el cursor sobre ella
+img.addEventListener("mouseover", function() {
+  this.style.transform = "scale(1.2)";
+});
+
+// Volver al tamaño original al salir el cursor de la imagen
+img.addEventListener("mouseout", function() {
+  this.style.transform = "scale(1)";
+});
+

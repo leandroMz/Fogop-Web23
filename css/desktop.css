@@ -34,8 +34,8 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 63%, rgba(212,62,133,1) 1
         /* height: 20rem; */
     }
 
-    .marca,
-    img {
+    .marca
+    {
         font-stretch: 200px;
     }
 
@@ -139,32 +139,35 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 63%, rgba(212,62,133,1) 1
         justify-content: space-between;
     }
 /* section */
-    .column1 {
-        /* margin: 3rem 0rem; */
-        padding: 40px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
-    /* imagen */
-    .graf-info {        
-        height: 33rem;
-        width: 150rem;
-        margin: 1rem 3rem;
-        box-shadow: -7px 20px 22px -8px rgba(0, 0, 0, 0.9);
-    }
-    .graf-info img {
-        width: 100%;
-        height: 100%;
-    }
-    .start-info{
-
-    }
-    .orderContr {
-        padding: 0rem 4rem 1rem 4rem;
-        font-size: larger;
-        text-align: left;
-    }
+.column1 {
+    /* margin: 3rem 0rem; */
+    padding: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+/* imagen */
+.graf-info {        
+    height: 33rem;
+    width: 150rem;
+    margin: 1rem 3rem;
+    box-shadow: -7px 20px 22px -8px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+.graf-info img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.graf-info img:hover {
+    cursor: pointer;
+     
+}
+.orderContr {
+    padding: 0rem 4rem 1rem 4rem;
+    font-size: larger;
+    text-align: left;
+}
     
 /* info */
     .cards-info {
