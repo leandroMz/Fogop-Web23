@@ -124,10 +124,7 @@ h5{
     color: #25D366;
 }
 
-.graf {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .dowloadNotas:hover {
     background-color:var(--cintas);

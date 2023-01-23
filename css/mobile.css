@@ -1,7 +1,8 @@
 @media (max-width: 800px) {
-    
 
-    .btton, .program-title {
+
+    .btton,
+    .program-title {
         display: none;
     }
 
@@ -193,9 +194,8 @@
     }
 
     /* HAMBUR MODE */
-    .mn-dsktop{
+    .mn-dsktop {
         display: none;
-        background-image: linear-gradient(to left top, #c2236e, #bc3e92, #ad57b1, #966dcb, #7881dd, #7d90e4, #849fea, #8eaeef, #b2c0f3, #d0d4f6, #e9e9fa, #ffffff);
         position: absolute;
         top: 0;
         right: 0;
@@ -203,47 +203,57 @@
         height: 100%;
         color: white;
         padding: 20px;
+        background: rgb(255, 255, 255);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(151deg, rgba(255, 255, 255, 1) 7%, rgba(255, 255, 255, 1) 20%, rgba(210, 86, 144, 1) 43%, rgba(194, 35, 110, 1) 60%, rgba(194, 35, 110, 1) 100%);
     }
-    .desktop-menu li{
+
+    .desktop-menu li {
         padding: 2rem 1rem;
     }
-    .desktop-menu a{
-        color: var(--titulos); 
-        font-size: 1.3rem;       
+
+    .desktop-menu a {
+        color: var(--titulos);
+        font-size: 1.3rem;
         /* line-height: 3rem; */
     }
-    .mn-dsktop.show-menu{
+
+    .mn-dsktop.show-menu {
         display: block;
         animation: slide-in 0.5s ease-out;
         z-index: 9999;
     }
-    
+
     @keyframes slide-in {
-        from{
+        from {
             transform: translateX(100%);
         }
-        to{
+
+        to {
             transform: translateX(0);
         }
     }
-    .close-menu{
+
+    .close-menu {
         background-color: transparent;
         padding: .05rem .05rem;
     }
-    .close-menu:hover{
-    box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
+
+    .close-menu:hover {
+        box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
 
     }
-    .close-menu i{
-color: var(--botones);
-font-size: 3rem;
+
+    .close-menu i {
+        color: var(--botones);
+        font-size: 3rem;
     }
-    
-    
+
+
     /* FIN HAMBUR */
     .marca {
         padding: 1rem 0rem;
-        display: flex;       
+        display: flex;
     }
 
     .marca img {
@@ -252,7 +262,7 @@ font-size: 3rem;
 
     .hambur-desktop {
         cursor: pointer;
-        
+
     }
 
     .fa-bars {
@@ -272,8 +282,12 @@ font-size: 3rem;
         transition: 2s;
     }
 
-    .graf img {
+    .graf-info {
         display: none;
+    }
+
+    .start-info {
+        margin: 2rem 0rem 0rem;
     }
 
     .p-mobile {
