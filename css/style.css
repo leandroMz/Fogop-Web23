@@ -81,8 +81,12 @@ ul {
 footer{
     background-color: var(--footerBack);
 }
-h2,h3,h4,.bt3{
+h2,h4,.bt3{
     font-family: var(--fontTitulos);
+    color: var(--titulos);
+}
+h3{
+    font-family: var(--fontParrafos);
     color: var(--titulos);
 }
 #status, #hours{
