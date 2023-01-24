@@ -120,11 +120,6 @@ h5{
 .box4{
     background-color: var(--cintas);
 }
-.wppContact i {
-    color: #25D366;
-}
-
-
 
 .dowloadNotas:hover {
     background-color:var(--cintas);
@@ -157,7 +152,7 @@ article .box {
 }
 
 i{
-    color: var(--botones);
+    color: var(--titulos);
 }
 .bt3:hover {
     background-color: #f6f6f8;
