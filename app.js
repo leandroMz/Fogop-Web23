@@ -201,6 +201,7 @@ menuOptions.forEach(function(option) {
 });
 
 
+
 // Obtener la imagen
 const img = document.getElementById("img-zoom");
 

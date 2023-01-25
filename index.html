@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/lazysizes.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.min.js"></script>
+
     <script src="https://kit.fontawesome.com/e108fbf003.js" crossorigin="anonymous" async></script>
     <script type="text/javascript" src="./floating-whatsapp-master/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./floating-whatsapp-master/floating-wpp.min.js"></script>
@@ -47,13 +49,27 @@
     <main>
         <div class="slide-contenedor">
             <div class="miSlider fade">
-                <img src="/img/f1.webp" alt="funcionamiento de las luminarias, FOGOP">
+                <!-- <img src="img/diseño-mobile.png" srcset="/img/diseño.png 1000w, /img/diseño-mobile.png 800w" alt="funcionamiento de las luminarias, FOGOP"> -->
+                <picture>
+                    <source media="(min-width: 800px)" srcset="img/diseño.png">
+                    <source media="(max-width: 800px)" srcset="img/diseño-mobile.png">
+                    <img src="img/diseño-mobile.png" alt="Imagen de diseño">
+                  </picture>
+                  
             </div>
             <div class="miSlider fade">
-                <img src="/img/f2.webp" alt="instalacion de luminarias, FOGOP">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="img/diseño-mobile2.png">
+                    <source media="(max-width: 800px)" srcset="img/diseño2.png">
+                    <img src="img/diseño-mobile2.png" alt="Imagen de diseño">
+                  </picture>
             </div>
             <div class="miSlider fade">
-                <img src="/img/f3.webp" alt="luminarias, FOGOP">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="img/diseño-mobile3.png">
+                    <source media="(max-width: 800px)" srcset="img/diseño3.png">
+                    <img src="img/diseño-mobile3.png" alt="Imagen de diseño">
+                  </picture>
             </div>
             <div class="direcciones">
                 <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
