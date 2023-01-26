@@ -1,23 +1,127 @@
 @media (max-width: 800px) {
 
-
-    .btton,
-    .program-title {
+    .program-title,
+    .desc-mobile,
+    .saltoNone,
+    .align-p,
+    .graf-info,
+    .p-mobile,
+    .parrafo-mob,
+    .mobile-grid,
+    .detail-grid,
+    .list-desk {
         display: none;
-    }
-
-    .desc-mobile {
-        display: none;
-    }
-
-    .saltoNone {
-        display: none;
-
     }
 
     p {
         margin: 18px;
     }
+
+    header {
+        background-color: var(--botones);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    section {
+        display: flex;
+        padding: 0px 20px;
+        margin: 30px 0px 0px 0px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    footer {
+        padding: 0px 0px 15px;
+        background: var(--footer);
+    }
+
+    /* HEADER */
+    /* HAMBUR MODE */
+    .mn-dsktop {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        color: white;
+        padding: 20px;
+        background-color: var(--fondoBack);
+        box-shadow: inset 1px -2px 300px -85px rgba(0, 0, 0, 0.75);
+    }
+
+    .desktop-menu li {
+        padding: 2rem 1rem;
+    }
+
+    .desktop-menu a {
+        color: var(--titulos);
+        font-size: 1.3rem;
+        /* line-height: 3rem; */
+    }  
+
+    .mn-dsktop.show-menu {
+        display: block;
+        animation: slide-in 0.5s ease-out;
+        z-index: 9999;
+    }
+
+    @keyframes slide-in {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .close-menu {
+        background-color: transparent;
+        padding: .05rem .05rem;
+    }
+
+    .close-menu:hover {
+        box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
+    }
+
+    .close-menu i {
+        color: var(--botones);
+        font-size: 3rem;
+    }
+
+    .marca {
+        padding: 1rem 0rem;
+        display: flex;
+    }
+
+    .marca img {
+        width: 35%;
+    }
+
+    
+
+    .fa-bars {
+        font-size: 2.5rem;
+        color: var(--fondoBack);
+    }
+
+    /* MAIN */
+    .slide-contenedor {
+        box-shadow: 1px 2px 9px 9px rgba(0, 0, 0, 0.68);
+    }
+
+    .miSlider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: top;
+        transition: 2s;
+    }    
 
     .box-what {
         margin: 0px 20px;
@@ -28,23 +132,29 @@
     }
 
     .box2 {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(248, 224, 218, 1) 29%, rgba(248, 224, 218, 1) 100%);
-        border-radius: 50px;
-        padding: 0px 50px;
-        height: 40px;
-    }
-
-    .config-botton {
-        position: absolute;
-        left: 30px;
-        right: auto;
-        padding: 10px 25px;
-    }
-
-    .box2 {
         display: flex;
         align-items: center;
         justify-content: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(248, 224, 218, 1) 29%, rgba(248, 224, 218, 1) 100%);
+        border-radius: 50px;
+        padding: 0px 50px;
+        height: auto;
+    }
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .box4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.3rem 1rem;
+        background: var(--botones);
+        box-shadow: 1px 5px 10px 5px rgba(87, 84, 84, 0.9);
     }
 
     .bt2 {
@@ -68,69 +178,18 @@
         font-weight: 700;
     }
 
-    .box4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2.3rem 1rem;
-        background: var(--botones);
-        box-shadow: 1px 5px 10px 5px rgba(87, 84, 84, 0.9);
-    }
-
     .dondeEst {
         margin: 0rem 1rem;
         text-align: center;
-    }
-
-    .circulos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 50px;
-    }
-
-    .circle {
-        width: 10px;
-        height: 10px;
-        background: white;
-        margin: 3px;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-        border: #f3603b 1.5px solid;
     }
 
     .saltoSeparado2 {
         padding: 2.5rem 0rem 0rem;
     }
 
-    .box3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
-    }
-
     .sub-title3 {
         color: #FFFFFF;
         font-size: 30px;
-    }
-
-    .cop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-    }
-
-    .copyright2 {
-        color: #2e3745;
-        text-align: center;
-        font-size: small;
-        padding: 1.5rem 0rem 0rem;
     }
 
     .selector {
@@ -146,183 +205,13 @@
         margin: 0px 3px;
     }
 
-    .listas {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 25px;
-    }
-
-    .listas a {
-        color: white;
-        padding: 30px;
-        line-height: 2;
-        font-size: 1.2rem;
-    }
-
-    .redes {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 25px;
-    }
-
-    .redes i {
-        color: #FFFFFF;
-        font-size: 1.875rem;
-    }
-
-    .logo-f {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-    }
-
-    .logo-f img {
-        width: 70%;
-    }
-
-    /* header {
-        background: rgb(255, 255, 255);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(251, 250, 249, 1) 71%, rgba(201, 201, 199, 1) 78%, rgba(30, 30, 38, 1) 91%);
-    } */
-    header {
-        background-color: var(--botones);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    /* HAMBUR MODE */
-    .mn-dsktop {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100%;
-        color: white;
-        padding: 20px;
-        background-color: var(--fondoBack);
-        box-shadow: inset 1px -2px 300px -85px rgba(0,0,0,0.75);
-        }
-
-    .desktop-menu li {
-        padding: 2rem 1rem;
-    }
-
-    .desktop-menu a {
-        color: var(--titulos);
-        font-size: 1.3rem;
-        /* line-height: 3rem; */
-    }
-
-    .mn-dsktop.show-menu {
-        display: block;
-        animation: slide-in 0.5s ease-out;
-        z-index: 9999;
-    }
-
-    @keyframes slide-in {
-        from {
-            transform: translateX(100%);
-        }
-
-        to {
-            transform: translateX(0);
-        }
-    }
-    .mn-dsktop.show-menu {
-        display: block;
-        animation: slide-in 0.5s ease-out;
-        z-index: 9999;
-    }
-
-    @keyframes slide-in {
-        from {
-            transform: translateX(100%);
-        }
-
-        to {
-            transform: translateX(0);
-        }
-    }
-
-
-    .close-menu {
-        background-color: transparent;
-        padding: .05rem .05rem;
-    }
-
-    .close-menu:hover {
-        box-shadow: inset 3px 5px 9px -1px rgb(70, 16, 7);
-    }
-
-    .close-menu i {
-        color: var(--botones);
-        font-size: 3rem;
-    }
-
-
-    /* FIN HAMBUR */
-    .marca {
-        padding: 1rem 0rem;
-        display: flex;
-    }
-
-    .marca img {
-        width: 15rem;
-    }
-
-    .hambur-desktop {
-        cursor: pointer;
-
-    }
-
-    .fa-bars {
-        font-size: 2.5rem;
-        color: var(--fondoBack);
-    }
-
-    .slide-contenedor {
-        box-shadow: 1px 2px 9px 9px rgba(0, 0, 0, 0.68);
-    }
-
-    .miSlider img {
-        width: 100%;
-        height: 75vmax;
-        object-fit: cover;
-        vertical-align: top;
-        transition: 2s;
-    }
-
-    .graf-info {
-        display: none;
-    }
-
     .start-info {
         margin: 2rem 0rem 0rem;
-    }
-
-    .p-mobile {
-        display: none;
     }
 
     .title {
         font-size: 2.5rem;
     }
-
-    section {
-        display: flex;
-        padding: 0px 20px;
-        margin: 30px 0px 0px 0px;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: space-between;
-    }
-
-
 
     .box {
         padding: 30px 0px 0px;
@@ -332,23 +221,9 @@
         padding: 0px;
     }
 
-    .align-p {
-        display: none;
-    }
-
     .dowloadNotas {
-        padding: .7rem 0rem;
-        margin: 0rem 0rem 3rem;
-        display: inline-block;
-        width: 18rem;
-        font-size: medium;
-        font-weight: 600;
-        position: relative;
-    }
-
-    .parrafo-mob {
-        display: none;
-    }
+        margin: 0rem 0rem 3rem;               
+    }    
 
     .comentarios {
         display: flex;
@@ -380,6 +255,7 @@
         font-size: x-large;
     }
 
+    /* GRID */
     .order-Grid {
         padding: 0rem 1rem 2rem;
     }
@@ -391,12 +267,6 @@
     .grid-container h4 {
         font-size: x-small;
     }
-
-    .mobile-grid,
-    .detail-grid {
-        display: none;
-    }
-
 
     .grid-container {
         display: grid;
@@ -448,17 +318,20 @@
         font-weight: 900;
     }
 
-    footer {
-        padding: 0px 0px 15px;
-        background: var(--footer);
+
+    /* FOOTER */
+    .listas {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 25px;
     }
 
-
-
-    .list-desk {
-        display: none;
+    .listas a {
+        color: white;
+        padding: 30px;
+        line-height: 2;
+        font-size: 1.2rem;
     }
-
 
     .mensaje-foot {
         padding: 2rem 0rem .5rem;
@@ -495,12 +368,30 @@
         position: relative;
         left: 1rem;
     }
-    
-    .miSlider img {
-        width: 100%;
-        height: 100%;
-        object-fit:cover;
-      }
-    
-     
+
+    .logo-f {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .logo-f img {
+        width: 70%;
+    }
+
+    .cop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .copyright2 {
+        color: #2e3745;
+        text-align: center;
+        font-size: small;
+        padding: 1.5rem 0rem 0rem;
+    }
 }
