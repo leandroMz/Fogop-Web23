@@ -1,3 +1,4 @@
 {
-    "trailing-spaces.trimOnSave": true
+    "trailing-spaces.trimOnSave": true,
+    "liveServer.settings.port": 5501
 }

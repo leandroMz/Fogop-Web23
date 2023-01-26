@@ -21,7 +21,7 @@
         background-color: var(--botones);
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
 
     section {
@@ -37,6 +37,16 @@
     footer {
         padding: 0px 0px 15px;
         background: var(--footer);
+    }
+
+    .marca,
+    .hambur-desktop {
+        margin: 0rem 2rem;
+    }
+
+    .hambur-desktop i {
+        margin: 0rem 1rem;
+        font-size: 1.5rem;
     }
 
     /* HEADER */
@@ -62,7 +72,7 @@
         color: var(--titulos);
         font-size: 1.3rem;
         /* line-height: 3rem; */
-    }  
+    }
 
     .mn-dsktop.show-menu {
         display: block;
@@ -103,7 +113,7 @@
         width: 35%;
     }
 
-    
+
 
     .fa-bars {
         font-size: 2.5rem;
@@ -121,7 +131,7 @@
         object-fit: cover;
         vertical-align: top;
         transition: 2s;
-    }    
+    }
 
     .box-what {
         margin: 0px 20px;
@@ -140,6 +150,7 @@
         padding: 0px 50px;
         height: auto;
     }
+
     .box3 {
         display: flex;
         flex-direction: column;
@@ -222,8 +233,8 @@
     }
 
     .dowloadNotas {
-        margin: 0rem 0rem 3rem;               
-    }    
+        margin: 0rem 0rem 3rem;
+    }
 
     .comentarios {
         display: flex;
